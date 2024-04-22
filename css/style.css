@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #ffc0cb
+    background-color: #FBE4F0
   }
   
   #container {
@@ -36,8 +36,8 @@ body, html {
   }
 
   .profile-photo {
-    max-width: 50%; /* Adjust the maximum width of the photo */
-    max-height: 50%; /* Adjust the maximum height of the photo */
+    max-width: 100pt; /* Adjust the maximum width of the photo */
+    max-height: 100pt; /* Adjust the maximum height of the photo */
     border-radius: 50%; /* Circular shape */
     object-fit: cover; /* Keeps aspect ratio, might crop image */
     border: 3px solid white; /* Optional: if you want a border around the image */
