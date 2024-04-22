@@ -26,11 +26,17 @@ body, html {
     position: relative;
   }
 
-  
   #smartphone-content {
     text-align: center; /* Center the text inside the phone */
   }
   
+  .profile-photo-container {
+    position: absolute; /* Set position to absolute */
+    bottom: 20px; /* Adjust the distance from the bottom */
+    left: 50%; /* Align to the center horizontally */
+    transform: translateX(-50%);
+  }
+
   .profile-photo {
     width: 150px; /* Or the width you desire */
     height: 150px; /* Or the height you desire, maintaining aspect ratio */
@@ -38,10 +44,6 @@ body, html {
     object-fit: cover; /* Keeps aspect ratio, might crop image */
     margin: 20px 0; /* Adds space above and below the image */
     border: 3px solid white; /* Optional: if you want a border around the image */
-    position: absolute; /* Set position to absolute */
-    bottom: 20px; /* Adjust the distance from the bottom */
-    left: 50%; /* Align to the center horizontally */
-    transform: translateX(-50%);
   }
 
   
