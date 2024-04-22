@@ -50,8 +50,8 @@ h2, h3, h4, h5, h6 {
   }
 
   .profile-photo {
-    max-width: 300pt; /* Adjust the maximum width of the photo */
-    max-height: 300pt; /* Adjust the maximum height of the photo */
+    max-width: 250pt; /* Adjust the maximum width of the photo */
+    max-height: 250pt; /* Adjust the maximum height of the photo */
     object-fit: cover; /* Keeps aspect ratio, might crop image */
   }
   
@@ -94,7 +94,7 @@ h2, h3, h4, h5, h6 {
     padding: 20px; /* Add padding for some spacing inside the container */
     margin: 30px auto; /* Center the div with automatic horizontal margins */
     font-size: 1rem; /* Adjust size as needed */
-    width: 100%; /* Use 100% if you want it to be responsive, or set a fixed width */
+    width: 700pt; /* Use 100% if you want it to be responsive, or set a fixed width */
     height: auto; /* Set height to auto, adjust as needed */
     box-sizing: border-box;
   }
