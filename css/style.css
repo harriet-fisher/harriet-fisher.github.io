@@ -87,13 +87,16 @@ h2, h3, h4, h5, h6 {
   
   
   #about-me {
-    background: url('../assets/images/portflio_webbg.png') no-repeat center center;
-    background-size: cover; /* Cover the entire area of the div */
+    background: url('../assets/images/portfolio_webbg.png') no-repeat center center;
+    background-size: contain; /* Adjust the background size to contain to prevent cropping */
+    background-position: top center; /* You can adjust this value to 'top center', 'center', or 'bottom center' */
     color: #ffffff; /* Assuming you want white text for visibility */
-    padding: 10px; /* Add padding for some spacing inside the container */
-    margin: 10px 0;
+    padding: 20px; /* Add padding for some spacing inside the container */
+    margin: 30px auto; /* Center the div with automatic horizontal margins */
     font-size: 1rem; /* Adjust size as needed */
-    max-width: 800px;
+    width: 100%; /* Use 100% if you want it to be responsive, or set a fixed width */
+    height: auto; /* Set height to auto, adjust as needed */
+    box-sizing: border-box;
   }
   
   #about-me ul {
