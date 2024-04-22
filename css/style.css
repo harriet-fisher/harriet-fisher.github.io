@@ -28,12 +28,6 @@ body, html {
   #smartphone-content {
     text-align: center; /* Center the text inside the phone */
   }
-  
-  .profile-photo-container {
-    bottom: 20px; /* Adjust the distance from the bottom */
-    left: 50%; /* Align to the center horizontally */
-    transform: translateX(-50%);
-  }
 
   .profile-photo {
     max-width: 100pt; /* Adjust the maximum width of the photo */
