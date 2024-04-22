@@ -17,7 +17,7 @@ span {
 h1 {
   font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
   font-weight: bold;
-  color: #fff;
+  color: #000000;
   font-size: 40px;
   }
 
@@ -50,8 +50,8 @@ h2, h3, h4, h5, h6 {
   }
 
   .profile-photo {
-    max-width: 200pt; /* Adjust the maximum width of the photo */
-    max-height: 200pt; /* Adjust the maximum height of the photo */
+    max-width: 300pt; /* Adjust the maximum width of the photo */
+    max-height: 300pt; /* Adjust the maximum height of the photo */
     object-fit: cover; /* Keeps aspect ratio, might crop image */
   }
   
