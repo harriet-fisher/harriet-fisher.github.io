@@ -27,8 +27,8 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Or adjust to fit the smartphone screen area */
-    margin-right: 50px; /* Adds space between the smartphone and the sidebar */
+    padding: 30px; /* Or adjust to fit the smartphone screen area */
+    margin-right: 80px; /* Adds space between the smartphone and the sidebar */
   }
 
   #smartphone-content {
@@ -45,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   
   #sidebar {
     max-width: 400px; /* Adjust based on your content */
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff; /* Text color for the sidebar */
   }
   
@@ -72,7 +73,13 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: middle; /* Aligns with the text properly */
   }
   
+  
   #about-me {
+    background: url('../assets/images/portflio_webbg.png') no-repeat center center;
+    background-size: cover; /* Cover the entire area of the div */
+    color: #ffffff; /* Assuming you want white text for visibility */
+    padding: 10px; /* Add padding for some spacing inside the container */
+    margin: 20px 0;
     font-size: 1rem; /* Adjust size as needed */
   }
   
