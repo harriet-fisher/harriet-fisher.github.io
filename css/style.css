@@ -23,10 +23,21 @@ body, html {
     padding: 20px; /* Or adjust to fit the smartphone screen area */
     margin-right: 50px; /* Adds space between the smartphone and the sidebar */
   }
+
   
   #smartphone-content {
     text-align: center; /* Center the text inside the phone */
   }
+  
+  .profile-photo {
+    width: 150px; /* Or the width you desire */
+    height: 150px; /* Or the height you desire, maintaining aspect ratio */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Keeps aspect ratio, might crop image */
+    margin: 20px 0; /* Adds space above and below the image */
+    border: 3px solid white; /* Optional: if you want a border around the image */
+  }
+
   
   #sidebar {
     max-width: 400px; /* Adjust based on your content */
