@@ -36,8 +36,8 @@ body, html {
   }
 
   .profile-photo {
-    max-width: 10%; /* Adjust the maximum width of the photo */
-    max-height: 10%; /* Adjust the maximum height of the photo */
+    max-width: 50%; /* Adjust the maximum width of the photo */
+    max-height: 50%; /* Adjust the maximum height of the photo */
     border-radius: 50%; /* Circular shape */
     object-fit: cover; /* Keeps aspect ratio, might crop image */
     border: 3px solid white; /* Optional: if you want a border around the image */
