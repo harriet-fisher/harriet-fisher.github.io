@@ -6,6 +6,13 @@ body, html {
     font-family: 'Montserrat', sans-serif;
     background-color: #180e3b
   }
+
+span {
+  font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
+  font-weight: bold;
+  color: #fff;
+  font-size: 28px;
+}
   
 h1 {
   font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
@@ -35,7 +42,7 @@ h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     padding: 30px; /* Or adjust to fit the smartphone screen area */
-    margin-right: 80px; /* Adds space between the smartphone and the sidebar */
+    margin-right: 50px; /* Adds space between the smartphone and the sidebar */
   }
 
   #smartphone-content {
@@ -49,7 +56,7 @@ h2, h3, h4, h5, h6 {
   }
   
   #sidebar {
-    max-width: 800px; /* Adjust based on your content */
+    max-width: 900px; /* Adjust based on your content */
     font-family: 'Montserrat', sans-serif;
     color: #ffffff; /* Text color for the sidebar */
   }
@@ -84,9 +91,9 @@ h2, h3, h4, h5, h6 {
     background-size: cover; /* Cover the entire area of the div */
     color: #ffffff; /* Assuming you want white text for visibility */
     padding: 10px; /* Add padding for some spacing inside the container */
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 1rem; /* Adjust size as needed */
-    max-width: 700px;
+    max-width: 800px;
   }
   
   #about-me ul {
@@ -112,6 +119,6 @@ h2, h3, h4, h5, h6 {
   }
   
   button:hover {
-    background-color: #0056b3; /* Darken button on hover */
+    background-color: #5d1042; /* Darken button on hover */
   }
   
