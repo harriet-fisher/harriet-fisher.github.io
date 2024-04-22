@@ -1,0 +1,46 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #container {
+    display: flex;
+  }
+  
+  #smartphone {
+    /* Style to make it look like a phone, possibly with a background image */
+    background: url('../assets/images/smartphone.png') no-repeat center center;
+    background-size: contain;
+  }
+  
+  #smartphone-content {
+    /* Style the content inside the phone graphic */
+  }
+  
+  #sidebar {
+    /* Styles for the sidebar with recruitment status and facts about you */
+  }
+  
+  #recruitment-status {
+    /* Styles for the recruitment status box */
+  }
+  
+  #status-indicator.not-looking {
+    background-color: red;
+    /* Other styles for the indicator dot */
+  }
+  
+  #about-me {
+    /* Styles for the about me section */
+  }
+  
+  #about-me ul {
+    list-style: none;
+    /* More styles for your facts list */
+  }
+  
+  button {
+    /* Button styles */
+  }
+  
