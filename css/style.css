@@ -87,15 +87,17 @@ h2, h3, h4, h5, h6 {
   
   
   #about-me {
-    background: url('../assets/images/portfolio_webbg.png') no-repeat center center;
-    background-size: contain; /* Adjust the background size to contain to prevent cropping */
-    background-position: top center; /* You can adjust this value to 'top center', 'center', or 'bottom center' */
-    color: #ffffff; /* Assuming you want white text for visibility */
-    padding: 20px; /* Add padding for some spacing inside the container */
-    margin: 30px auto; /* Center the div with automatic horizontal margins */
-    font-size: 1rem; /* Adjust size as needed */
-    width: 700pt; /* Use 100% if you want it to be responsive, or set a fixed width */
-    height: auto; /* Set height to auto, adjust as needed */
+    background: url('../assets/images/portfliio_webbg.png') no-repeat center center;
+    background-size: contain; /* This will ensure the image fits within the div without stretching */
+    color: #ffffff; /* Text color */
+    padding: 40px; /* Or adjust to fit the content within the browser image */
+    margin: 0 auto; /* This centers the div if it has a set width */
+    width: 100%; /* You might need to adjust this to fit the aspect ratio of your background image */
+    height: 600px; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column; /* Aligns content in a column */
+    justify-content: flex-start; /* Aligns content to the top */
+    align-items: center; /* Centers content horizontally */
     box-sizing: border-box;
   }
   
