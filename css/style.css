@@ -6,41 +6,75 @@ body, html {
   
   #container {
     display: flex;
+    min-height: 100vh; /* Full height of the viewport */
+    align-items: center; /* Center children vertically */
+    justify-content: center; /* Center children horizontally */
+    padding: 20px;
   }
   
   #smartphone {
-    /* Style to make it look like a phone, possibly with a background image */
+    /* Assuming you have a smartphone frame image */
     background: url('../assets/images/smartphone.png') no-repeat center center;
-    background-size: contain;
+    background-size: cover;
+    width: 300px; /* Width of your smartphone image */
+    height: 600px; /* Height of your smartphone image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Or adjust to fit the smartphone screen area */
+    margin-right: 50px; /* Adds space between the smartphone and the sidebar */
   }
   
   #smartphone-content {
-    /* Style the content inside the phone graphic */
+    text-align: center; /* Center the text inside the phone */
   }
   
   #sidebar {
-    /* Styles for the sidebar with recruitment status and facts about you */
+    max-width: 400px; /* Adjust based on your content */
+    color: #333; /* Text color for the sidebar */
   }
   
   #recruitment-status {
-    /* Styles for the recruitment status box */
+    margin-bottom: 30px; /* Space between recruitment status and the next section */
   }
   
   #status-indicator.not-looking {
+    display: inline-block;
     background-color: red;
-    /* Other styles for the indicator dot */
+    border-radius: 50%; /* Makes it a circle */
+    width: 10px; /* Size of the indicator dot */
+    height: 10px; /* Size of the indicator dot */
+    margin-right: 5px; /* Space between dot and the text */
+    vertical-align: middle; /* Aligns with the text properly */
   }
   
   #about-me {
-    /* Styles for the about me section */
+    font-size: 1rem; /* Adjust size as needed */
   }
   
   #about-me ul {
     list-style: none;
-    /* More styles for your facts list */
+    padding: 0;
+    margin: 0;
+  }
+  
+  #about-me ul li {
+    margin-bottom: 10px; /* Space between list items */
   }
   
   button {
-    /* Button styles */
+    background-color: #007bff; /* Bootstrap primary blue for example */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase; /* Stylistic choice for button text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darken button on hover */
   }
   
