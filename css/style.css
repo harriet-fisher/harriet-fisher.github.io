@@ -13,7 +13,6 @@ body, html {
   }
   
   #smartphone {
-    /* Assuming you have a smartphone frame image */
     background: url('../assets/images/smartphone.png') no-repeat center center;
     background-size: cover;
     width: 300px; /* Width of your smartphone image */
