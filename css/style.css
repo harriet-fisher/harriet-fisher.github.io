@@ -7,7 +7,14 @@ body, html {
     background-color: #180e3b
   }
   
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
+  font-weight: bold;
+  color: #fff;
+  font-size: 40px;
+  }
+
+h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
 }
 
@@ -36,11 +43,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .profile-photo {
-    max-width: 100pt; /* Adjust the maximum width of the photo */
-    max-height: 100pt; /* Adjust the maximum height of the photo */
-    border-radius: 50%; /* Circular shape */
+    max-width: 200pt; /* Adjust the maximum width of the photo */
+    max-height: 200pt; /* Adjust the maximum height of the photo */
     object-fit: cover; /* Keeps aspect ratio, might crop image */
-    border: 3px solid white; /* Optional: if you want a border around the image */
   }
   
   #sidebar {
