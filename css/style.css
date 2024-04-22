@@ -23,7 +23,6 @@ body, html {
     align-items: center;
     padding: 20px; /* Or adjust to fit the smartphone screen area */
     margin-right: 50px; /* Adds space between the smartphone and the sidebar */
-    position: relative;
   }
 
   #smartphone-content {
@@ -31,7 +30,6 @@ body, html {
   }
   
   .profile-photo-container {
-    position: absolute; /* Set position to absolute */
     bottom: 20px; /* Adjust the distance from the bottom */
     left: 50%; /* Align to the center horizontally */
     transform: translateX(-50%);
