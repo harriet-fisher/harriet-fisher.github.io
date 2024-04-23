@@ -27,9 +27,12 @@ h2, h3, h4, h5, h6 {
 }
 
 #navbar {
-  background-color: #333; /* Dark background for the navbar */
+  background-color: #33333300;
   color: white;
   overflow: hidden;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  fle
 }
 
 #nav-container {
@@ -187,13 +190,13 @@ h2, h3, h4, h5, h6 {
     color: rgb(255, 102, 235);
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
-    height: 700px; /* changed from min-height to height */
+    height: 500px; /* changed from min-height to height */
     width: 100%; /* you can set a specific width if necessary */
     overflow: hidden; /* this will hide the overflow content */
 }
   
   #output-container {
-    height: 650px; /* changed from min-height to height */
+    height: 400px; /* changed from min-height to height */
     width: 100%;
     overflow-y: auto; /* Hide overflow */
   }
