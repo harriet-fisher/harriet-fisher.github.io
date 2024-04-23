@@ -37,7 +37,7 @@ h2, h3, h4, h5, h6 {
   #smartphone {
     background: url('../assets/images/smartphone.png') no-repeat center center;
     background-size: cover;
-    width: 400px; /* Width of your smartphone image */
+    width: 500px; /* Width of your smartphone image */
     height: 700px; /* Height of your smartphone image */
     display: flex;
     justify-content: center;
@@ -68,11 +68,11 @@ h2, h3, h4, h5, h6 {
     display: block; /* Images are inline by default which could cause some issues with positioning */
     margin: 0 auto; /* This will center the image in the container */
     /* Make sure the image is not too large for the overlap */
-    width: 100px; /* Adjust as necessary */
-    height: 100px; /* Adjust as necessary */
+    width: 150px; /* Adjust as necessary */
+    height: 150px; /* Adjust as necessary */
     object-fit: cover;
-    /* To ensure it's on top of other elements, you may need to adjust z-index */
     position: relative;
+    z-index: 0;
   }
   
   #sidebar {
@@ -97,7 +97,8 @@ h2, h3, h4, h5, h6 {
 
   #status-indicator.looking {
     display: inline-block;
-    background: url('../assets/images/green_glow.gif') center center;
+    background: url('../assets/images/green_glow.gif');
+    object-fit: contain;
     width: 20%; /* Size of the indicator dot */
     height: 20%; /* Size of the indicator dot */
     margin-right: 5px; /* Space between dot and the text */
