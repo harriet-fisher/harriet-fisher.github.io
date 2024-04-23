@@ -105,16 +105,13 @@ h2, h3, h4, h5, h6 {
   }
 
   #about-me {
-    background: url('../assets/images/portflio_webbg.png');
-    background-size: contain; /* This will ensure the image fits within the div without stretching */
-    color: #ffffff; /* Text color */
-    padding: 40px; /* Or adjust to fit the content within the browser image */
+    background-color: #f2d9e9;
+    color: #3c3c3c; /* Text color */
     margin: 0 auto; /* This centers the div if it has a set width */
     width: 100%; /* You might need to adjust this to fit the aspect ratio of your background image */
     height: 100%; /* Adjust the height as needed */
     display: flex;
     flex-direction: column; /* Aligns content in a column */
-    justify-content: flex-start; /* Aligns content to the top */
     align-items: center; /* Centers content horizontally */
     box-sizing: border-box;
   }

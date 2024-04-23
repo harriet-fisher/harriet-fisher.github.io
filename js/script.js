@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
       if (command.toLowerCase() === 'commands') {
         response = 'Available commands: hello, about, help';
       } else if (command.toLowerCase() === 'hello') {
-        response = 'Hello! How can I assist you today?';
+        response = 'Hello! Welcome to my portfolio :)';
       } else if (command.toLowerCase() === 'about') {
-        response = 'I am a web developer with a passion for UI/UX design.';
+        response = 'Im a rising senior at the University of Chicago studying Economics, Creative Computing, and Computer Science';
       } else if (command.toLowerCase() === 'help') {
         response = 'Type "commands" to see a list of available commands.';
       } else {
