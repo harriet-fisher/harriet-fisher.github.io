@@ -18,7 +18,7 @@ h1 {
   font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
   font-weight: bold;
   color: #000000;
-  font-size: 40px;
+  font-size: 30px;
   }
 
 h2, h3, h4, h5, h6 {
@@ -37,22 +37,30 @@ h2, h3, h4, h5, h6 {
     background: url('../assets/images/smartphone.png') no-repeat center center;
     background-size: cover;
     width: 300px; /* Width of your smartphone image */
-    height: 600px; /* Height of your smartphone image */
+    height: 500px; /* Height of your smartphone image */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px; /* Or adjust to fit the smartphone screen area */
+    padding: 10px; /* Or adjust to fit the smartphone screen area */
     margin-right: 50px; /* Adds space between the smartphone and the sidebar */
   }
 
   #smartphone-content {
     text-align: center; /* Center the text inside the phone */
+    text-align: center;
+    padding: 0; /* Make sure there's no extra padding */
+    margin: 0; /* Make sure there's no extra margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .profile-photo {
-    max-width: 250pt; /* Adjust the maximum width of the photo */
-    max-height: 250pt; /* Adjust the maximum height of the photo */
-    object-fit: cover; /* Keeps aspect ratio, might crop image */
+    max-width: 150pt; /* Adjust the maximum width of the photo */
+    max-height: 150pt; /* Adjust the maximum height of the photo */
+    object-fit: contain; /* Keeps aspect ratio, might crop image */
   }
   
   #sidebar {
@@ -78,9 +86,8 @@ h2, h3, h4, h5, h6 {
   #status-indicator.looking {
     display: inline-block;
     background: url('../assets/images/green_glow.gif') no-repeat center center;
-    border-radius: 50%; /* Makes it a circle */
-    width: 20px; /* Size of the indicator dot */
-    height: 20px; /* Size of the indicator dot */
+    width: 30px; /* Size of the indicator dot */
+    height: 30px; /* Size of the indicator dot */
     margin-right: 5px; /* Space between dot and the text */
     vertical-align: middle; /* Aligns with the text properly */
   }
