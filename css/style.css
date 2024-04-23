@@ -68,11 +68,11 @@ h2, h3, h4, h5, h6 {
     display: block; /* Images are inline by default which could cause some issues with positioning */
     margin: 0 auto; /* This will center the image in the container */
     /* Make sure the image is not too large for the overlap */
-    width: 150px; /* Adjust as necessary */
-    height: 150px; /* Adjust as necessary */
+    width: 200px; /* Adjust as necessary */
+    height: 200px; /* Adjust as necessary */
     object-fit: cover;
     position: relative;
-    z-index: 0;
+    margin-top: 10pt;
   }
   
   #sidebar {
@@ -150,11 +150,12 @@ h2, h3, h4, h5, h6 {
     color: #0f0;
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
+    min-height: 300px;
   }
   
   #output-container {
     height: 300px; /* Fixed height for your output container */
-    overflow-y: hidden; /* Hide overflow */
+    overflow-y: auto; /* Hide overflow */
   }
 
   #output {
