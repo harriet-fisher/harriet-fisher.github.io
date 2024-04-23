@@ -4,7 +4,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #180e3b
+    background-color: #140d2e
   }
 
 span {
@@ -36,8 +36,8 @@ h2, h3, h4, h5, h6 {
   #smartphone {
     background: url('../assets/images/smartphone.png') no-repeat center center;
     background-size: cover;
-    width: 300px; /* Width of your smartphone image */
-    height: 500px; /* Height of your smartphone image */
+    width: 400px; /* Width of your smartphone image */
+    height: 700px; /* Height of your smartphone image */
     display: flex;
     justify-content: center;
     align-items: center;
