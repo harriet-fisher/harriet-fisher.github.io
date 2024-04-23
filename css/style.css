@@ -56,7 +56,7 @@ h2, h3, h4, h5, h6 {
     align-items: center;
     width: 100%;
   }
-  
+
   #profile-container {
     position: relative; /* This will be positioned relative to the nearest positioned ancestor */
     top: -50px; /* Adjust this value to overlap with the header by the desired amount */
@@ -67,8 +67,8 @@ h2, h3, h4, h5, h6 {
     display: block; /* Images are inline by default which could cause some issues with positioning */
     margin: 0 auto; /* This will center the image in the container */
     /* Make sure the image is not too large for the overlap */
-    width: 150px; /* Adjust as necessary */
-    height: 150px; /* Adjust as necessary */
+    width: 100px; /* Adjust as necessary */
+    height: 100px; /* Adjust as necessary */
     object-fit: cover;
     /* To ensure it's on top of other elements, you may need to adjust z-index */
     position: relative;
