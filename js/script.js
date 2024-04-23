@@ -16,15 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (command.toLowerCase() === 'help') {
         response = 'Type "commands" to see a list of available commands.';
       } else if (command.toLowerCase() === 'facts') {
-        response = 'Here are some fun facts about me: I love movies and recently produced a feature length film, I love travelling and spent my gap year in Italy, and I love to cook';
+        response = 'Here are some fun facts about me: I love movies and<br>recently produced a feature length film, I love travelling<br>and spent my gap year in Italy, and I love to cook';
       } else {
         response = 'Command not recognized.';
       }
 
-      // Add the command and response to the output
-      outputElement.innerHTML += '<li>' + command + ': ' + response + '</li>';
+      outputElement.innerHTML += '<li><strong>' + command + '</strong>: ' + response + '</li>';
 
-      // Clear the input
       inputElement.value = '';
 
       // Scroll to the bottom of the output to show the latest entry
