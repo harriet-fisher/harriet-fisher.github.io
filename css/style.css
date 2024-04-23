@@ -184,20 +184,20 @@ h2, h3, h4, h5, h6 {
   }
   
   #interactive-terminal {
-    position: relative;
+    position: absolute;
     background: #140d2e url('../assets/images/portflio_webbg.png') no-repeat center center;
     background-size: cover;
     color: rgb(255, 102, 235);
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
-    width: 700px;
-    height: auto;
+    width: 575px;
+    height: 740px;
     overflow: hidden; /* this will hide the overflow content */
 }
   
   #output-container {
-    width: 600px;
-    height: auto;
+    width: 700px;
+    height: 550px;
     overflow-y: auto; /* Hide overflow */
   }
 
@@ -210,7 +210,7 @@ h2, h3, h4, h5, h6 {
   }
   
   #command-input {
-    width: 500px; /* Adjust width considering padding */
+    width: 540px; /* Adjust width considering padding */
     position: absolute;
     bottom: 10px; /* Align to the bottom of the terminal */
     background: #000;
