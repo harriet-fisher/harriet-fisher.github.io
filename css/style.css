@@ -215,6 +215,6 @@ h2, h3, h4, h5, h6 {
   
   .about-photo {
     width: 300pt;
-    border-radius: 50px; /* Optional: if you want rounded corners on the image */
+    border-radius: 80px; /* Optional: if you want rounded corners on the image */
   }
   
