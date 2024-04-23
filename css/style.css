@@ -149,7 +149,7 @@ h2, h3, h4, h5, h6 {
     position: relative;
     background: #140d2e url('../assets/images/portflio_webbg.png') no-repeat center center;
     background-size: cover;
-    color: #0f0;
+    color: rgb(255, 102, 235);
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
     min-height: 500px;
@@ -175,12 +175,12 @@ h2, h3, h4, h5, h6 {
     bottom: 10px; /* Align to the bottom of the terminal */
     background: #000;
     border: none;
-    color: #0f0;
+    color: rgb(255, 102, 235);
     font-family: 'Courier New', Courier, monospace;
   }
   
   #command-input::placeholder {
-    color: #0f0;
+    color: rgb(255, 102, 235);
   }
   
   #command-input:focus {
