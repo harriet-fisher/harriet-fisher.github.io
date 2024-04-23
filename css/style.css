@@ -56,11 +56,23 @@ h2, h3, h4, h5, h6 {
     align-items: center;
     width: 100%;
   }
+  
+  #profile-container {
+    position: relative; /* This will be positioned relative to the nearest positioned ancestor */
+    top: -50px; /* Adjust this value to overlap with the header by the desired amount */
+    text-align: center;
+  }
 
   .profile-photo {
-    max-width: 150pt; /* Adjust the maximum width of the photo */
-    max-height: 150pt; /* Adjust the maximum height of the photo */
-    object-fit: contain; /* Keeps aspect ratio, might crop image */
+    display: block; /* Images are inline by default which could cause some issues with positioning */
+    margin: 0 auto; /* This will center the image in the container */
+    /* Make sure the image is not too large for the overlap */
+    width: 150px; /* Adjust as necessary */
+    height: 150px; /* Adjust as necessary */
+    object-fit: cover;
+    /* To ensure it's on top of other elements, you may need to adjust z-index */
+    position: relative;
+    z-index: 10;
   }
   
   #sidebar {
@@ -100,7 +112,7 @@ h2, h3, h4, h5, h6 {
     padding: 40px; /* Or adjust to fit the content within the browser image */
     margin: 0 auto; /* This centers the div if it has a set width */
     width: 100%; /* You might need to adjust this to fit the aspect ratio of your background image */
-    height: 600px; /* Adjust the height as needed */
+    height: 100%; /* Adjust the height as needed */
     display: flex;
     flex-direction: column; /* Aligns content in a column */
     justify-content: flex-start; /* Aligns content to the top */
