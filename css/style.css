@@ -42,11 +42,11 @@ h2, h3, h4, h5, h6 {
 
 /* Style the navigation links */
 #navbar ul {
-  list-style-type: none; /* Remove bullet points from list items */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
-  display: flex; /* Use flexbox for horizontal alignment */
-  justify-content: center; /* Center the navigation items */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 #navbar li {
@@ -136,8 +136,8 @@ h2, h3, h4, h5, h6 {
     display: inline-block;
     background: url('../assets/images/green_glow.gif') center center;
     background-size: contain;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     margin-right: 5px;
     vertical-align: middle;
   }
@@ -255,6 +255,6 @@ h2, h3, h4, h5, h6 {
   
   .about-photo {
     width: 300pt;
-    border-radius: 80px; /* Optional: if you want rounded corners on the image */
+    border-radius: 100%;
   }
   
