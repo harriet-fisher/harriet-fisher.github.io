@@ -72,7 +72,7 @@ h2, h3, h4, h5, h6 {
     height: 200px; /* Adjust as necessary */
     object-fit: cover;
     position: relative;
-    margin-top: 10pt;
+    margin-top: 20px;
   }
   
   #sidebar {
@@ -98,15 +98,15 @@ h2, h3, h4, h5, h6 {
   #status-indicator.looking {
     display: inline-block;
     background: url('../assets/images/green_glow.gif');
-    width: 10pt; /* Size of the indicator dot */
-    height: 10pt; /* Size of the indicator dot */
+    width: 10px; /* Size of the indicator dot */
+    height: 10px; /* Size of the indicator dot */
     margin-right: 5px; /* Space between dot and the text */
     vertical-align: middle; /* Aligns with the text properly */
   }
 
   #about-me {
     background-color: #f2d9e9;
-    color: #3c3c3c; /* Text color */
+    color: #412535; /* Text color */
     margin: 0 auto; /* This centers the div if it has a set width */
     width: 100%; /* You might need to adjust this to fit the aspect ratio of your background image */
     height: 100%; /* Adjust the height as needed */
