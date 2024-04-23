@@ -17,9 +17,10 @@ span {
 h1 {
   font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
   font-weight: bold;
-  color: #000000;
-  font-size: 30px;
+  color: #ffffff;
+  font-size: 60px;
   line-height: 1;
+  text-align: left;
   }
 
 h2, h3, h4, h5, h6 {
@@ -65,39 +66,40 @@ h2, h3, h4, h5, h6 {
 
   #container {
     display: flex;
-    min-height: 100vh; /* Full height of the viewport */
+    min-height: 100vh;
     align-items: center; /* Center children vertically */
     justify-content: center; /* Center children horizontally */
     padding: 20px;
+    margin-top: -70px;
   }
   
   #smartphone {
-    background: url('../assets/images/smartphone.png') no-repeat center center;
-    background-size: cover;
-    width: 500px; /* Width of your smartphone image */
-    height: 700px; /* Height of your smartphone image */
+    background: #00000000;
+    height: 600px;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px; /* Or adjust to fit the smartphone screen area */
-    margin-right: 50px; /* Adds space between the smartphone and the sidebar */
+    padding: 0px; /* Or adjust to fit the smartphone screen area */;
+    margin-left: -10px;
+    margin-top: -50px;
   }
 
   #smartphone-content {
     text-align: center; /* Center the text inside the phone */
     text-align: center;
-    padding: 0; /* Make sure there's no extra padding */
-    margin: 0; /* Make sure there's no extra margin */
+    padding: 20px; /* Make sure there's no extra padding */
+    margin: 10px; /* Make sure there's no extra margin */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
   }
 
   #profile-container {
     position: relative; /* This will be positioned relative to the nearest positioned ancestor */
-    top: -50px; /* Adjust this value to overlap with the header by the desired amount */
+    top: -25px;
     text-align: center;
   }
 
@@ -105,21 +107,25 @@ h2, h3, h4, h5, h6 {
     display: block; /* Images are inline by default which could cause some issues with positioning */
     margin: 0 auto; /* This will center the image in the container */
     /* Make sure the image is not too large for the overlap */
-    width: 200px; /* Adjust as necessary */
-    height: 200px; /* Adjust as necessary */
+    width: 400px; /* Adjust as necessary */
+    height: 300px; /* Adjust as necessary */
     object-fit: cover;
     position: relative;
     margin-top: 20px;
   }
   
   #sidebar {
-    max-width: 900px; /* Adjust based on your content */
+    max-width: 1000px;
     font-family: 'Montserrat', sans-serif;
-    color: #ffffff; /* Text color for the sidebar */
+    color: #ffffff;
+    position: relative;
+    margin-top: -20px;
+    padding: 20px;
   }
   
   #recruitment-status {
-    margin-bottom: 30px; /* Space between recruitment status and the next section */
+    margin-top: 50px;
+    margin-bottom: 20px; /* Space between recruitment status and the next section */
   }
   
   #status-indicator.not-looking {
@@ -166,7 +172,9 @@ h2, h3, h4, h5, h6 {
   
   
   button {
-    background-color: #ce76a8; /* Bootstrap primary blue for example */
+    background-color: #ce76a8;
+    width: 250px;
+    height: 50px;
     color: white;
     font-family: 'Montserrat';
     font-weight: bold;
@@ -176,7 +184,9 @@ h2, h3, h4, h5, h6 {
     cursor: pointer;
     border-radius: 5px;
     text-transform: uppercase; /* Stylistic choice for button text */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    transition: background-color 0.3s ease;
+    position: relative;
+
   }
   
   button:hover {
@@ -184,35 +194,40 @@ h2, h3, h4, h5, h6 {
   }
   
   #interactive-terminal {
-    position: absolute;
-    background: #140d2e url('../assets/images/portflio_webbg.png') no-repeat center center;
-    background-size: cover;
+    position: relative;
+    background: #140d2e url('../assets/images/browser_bg_2.png') no-repeat center center;
+    background-size: contain;
     color: rgb(255, 102, 235);
-    padding: 20px;
+    padding: 30px;
+    margin-left: -47px;
     font-family: 'Courier New', Courier, monospace;
-    width: 575px;
-    height: 740px;
-    overflow: hidden; /* this will hide the overflow content */
+    width: 100%;
+    overflow: hidden;
 }
   
   #output-container {
-    width: 700px;
-    height: 550px;
+    height: 100%;
+    position: relative;
     overflow-y: auto; /* Hide overflow */
   }
 
   #output {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    height: 100%;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: -15px;
+    bottom: -20px;
+    position: relative;
+    height: 250px;
     overflow-y: auto;
   }
   
   #command-input {
-    width: 540px; /* Adjust width considering padding */
-    position: absolute;
-    bottom: 10px; /* Align to the bottom of the terminal */
+    width: 604px;
+    height: 20px;
+    position: relative;
+    bottom: -30px;
+    margin-left: 14px;
     background: #000;
     border: none;
     color: rgb(255, 102, 235);
