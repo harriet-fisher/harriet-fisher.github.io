@@ -134,11 +134,12 @@ h2, h3, h4, h5, h6 {
 
   #status-indicator.looking {
     display: inline-block;
-    background: url('../assets/images/green_glow.gif');
-    width: 10px; /* Size of the indicator dot */
-    height: 10px; /* Size of the indicator dot */
-    margin-right: 5px; /* Space between dot and the text */
-    vertical-align: middle; /* Aligns with the text properly */
+    background: url('../assets/images/green_glow.gif') center center;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
   }
 
   #about-me {
@@ -189,14 +190,14 @@ h2, h3, h4, h5, h6 {
     color: rgb(255, 102, 235);
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
-    height: 500px; /* changed from min-height to height */
-    width: 100%; /* you can set a specific width if necessary */
+    width: 700px;
+    height: auto;
     overflow: hidden; /* this will hide the overflow content */
 }
   
   #output-container {
-    height: 400px; /* changed from min-height to height */
-    width: 100%;
+    width: 600px;
+    height: auto;
     overflow-y: auto; /* Hide overflow */
   }
 
@@ -209,7 +210,7 @@ h2, h3, h4, h5, h6 {
   }
   
   #command-input {
-    width: calc(100% - 20px); /* Adjust width considering padding */
+    width: 500px; /* Adjust width considering padding */
     position: absolute;
     bottom: 10px; /* Align to the bottom of the terminal */
     background: #000;
