@@ -73,7 +73,6 @@ h2, h3, h4, h5, h6 {
     object-fit: cover;
     /* To ensure it's on top of other elements, you may need to adjust z-index */
     position: relative;
-    z-index: 10;
   }
   
   #sidebar {
@@ -152,16 +151,30 @@ h2, h3, h4, h5, h6 {
     color: #0f0;
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
+    position: relative;
   }
   
+  #output-container {
+    height: 300px; /* Fixed height for your output container */
+    overflow-y: hidden; /* Hide overflow */
+    background: url('../assets/images/terminal_background.png') no-repeat center center; /* Your terminal background */
+    background-size: cover; /* Cover the entire area */
+    flex-direction: column-reverse;
+  }
+
   #output {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
   }
   
   #command-input {
-    width: 100%;
+    width: calc(100% - 20px); /* Adjust width considering padding */
+    position: absolute;
+    bottom: 0;
     background: #000;
     border: none;
     color: #0f0;

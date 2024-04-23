@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Clear the input
       inputElement.value = '';
+      var outputContainer = document.getElementById('output-container');
+      outputContainer.scrollTop = outputContainer.scrollHeight;
     }
   });
 });
