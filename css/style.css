@@ -26,6 +26,41 @@ h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
 }
 
+#navbar {
+  background-color: #333; /* Dark background for the navbar */
+  color: white;
+  overflow: hidden;
+}
+
+#nav-container {
+  max-width: 1200px; /* Maximum width of your navigation content */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Style the navigation links */
+#navbar ul {
+  list-style-type: none; /* Remove bullet points from list items */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center the navigation items */
+}
+
+#navbar li {
+  padding: 16px 20px; /* Vertical and horizontal padding */
+}
+
+#navbar a {
+  text-decoration: none; /* Remove underlines from links */
+  color: white; /* White text color */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+#navbar a:hover {
+  color: #f2d9e9; /* Light pink color for hover state */
+}
+
   #container {
     display: flex;
     min-height: 100vh; /* Full height of the viewport */
