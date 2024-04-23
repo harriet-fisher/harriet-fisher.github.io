@@ -187,12 +187,14 @@ h2, h3, h4, h5, h6 {
     color: rgb(255, 102, 235);
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
-    min-height: 500px;
-  }
+    height: 700px; /* changed from min-height to height */
+    width: 100%; /* you can set a specific width if necessary */
+    overflow: hidden; /* this will hide the overflow content */
+}
   
   #output-container {
-    min-height: 480px;
-    min-width: 700px;
+    height: 650px; /* changed from min-height to height */
+    width: 100%;
     overflow-y: auto; /* Hide overflow */
   }
 
