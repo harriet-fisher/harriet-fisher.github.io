@@ -103,10 +103,9 @@ h2, h3, h4, h5, h6 {
     margin-right: 5px; /* Space between dot and the text */
     vertical-align: middle; /* Aligns with the text properly */
   }
-  
-  
+
   #about-me {
-    background: url('../assets/images/portfliio_webbg.png') no-repeat center center;
+    background: url('../assets/images/portfliio_webbg.png');
     background-size: contain; /* This will ensure the image fits within the div without stretching */
     color: #ffffff; /* Text color */
     padding: 40px; /* Or adjust to fit the content within the browser image */
