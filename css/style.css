@@ -156,7 +156,8 @@ h2, h3, h4, h5, h6 {
   }
   
   #output-container {
-    min-height: 480px; /* Fixed height for your output container */
+    min-height: 480px;
+    min-width: 700px;
     overflow-y: auto; /* Hide overflow */
   }
 
