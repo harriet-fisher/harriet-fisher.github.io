@@ -130,6 +130,8 @@ h2, h3, h4, h5, h6 {
   button {
     background-color: #ce76a8; /* Bootstrap primary blue for example */
     color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
