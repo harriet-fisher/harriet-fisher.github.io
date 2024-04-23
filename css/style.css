@@ -106,7 +106,7 @@ h2, h3, h4, h5, h6 {
   }
 
   #about-me {
-    background: url('../assets/images/portfliio_webbg.png');
+    background: url('../assets/images/portflio_webbg.png');
     background-size: contain; /* This will ensure the image fits within the div without stretching */
     color: #ffffff; /* Text color */
     padding: 40px; /* Or adjust to fit the content within the browser image */
@@ -130,6 +130,7 @@ h2, h3, h4, h5, h6 {
     margin-bottom: 10px; /* Space between list items */
   }
   
+  
   button {
     background-color: #ce76a8; /* Bootstrap primary blue for example */
     color: white;
@@ -144,5 +145,35 @@ h2, h3, h4, h5, h6 {
   
   button:hover {
     background-color: #5d1042; /* Darken button on hover */
+  }
+  
+  #interactive-terminal {
+    background: url('../assets/images/portflio_webbg.png');
+    color: #0f0;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  #output {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #command-input {
+    width: 100%;
+    background: #000;
+    border: none;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+  }
+  
+  #command-input::placeholder {
+    color: #0f0;
+  }
+  
+  #command-input:focus {
+    outline: none;
   }
   
