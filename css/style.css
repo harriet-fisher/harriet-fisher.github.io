@@ -145,19 +145,17 @@ h2, h3, h4, h5, h6 {
   }
   
   #interactive-terminal {
-    background: url('../assets/images/portflio_webbg.png');
+    position: relative;
+    background: url('../assets/images/portflio_webbg.png') no-repeat center center;
+    background-size: cover;
     color: #0f0;
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
-    position: relative;
   }
   
   #output-container {
     height: 300px; /* Fixed height for your output container */
     overflow-y: hidden; /* Hide overflow */
-    background: url('../assets/images/terminal_background.png') no-repeat center center; /* Your terminal background */
-    background-size: cover; /* Cover the entire area */
-    flex-direction: column-reverse;
   }
 
   #output {
@@ -165,19 +163,17 @@ h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    overflow-y: auto;
   }
   
   #command-input {
     width: calc(100% - 20px); /* Adjust width considering padding */
     position: absolute;
-    bottom: 0;
+    bottom: 10px; /* Align to the bottom of the terminal */
     background: #000;
     border: none;
     color: #0f0;
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 10px;
   }
   
   #command-input::placeholder {

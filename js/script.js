@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
       if (command.toLowerCase() === 'commands') {
         response = 'Available commands: hello, about, help';
       } else if (command.toLowerCase() === 'hello') {
-        response = 'Hello! Welcome to my portfolio :)';
+        response = 'Hello! How can I assist you today?';
       } else if (command.toLowerCase() === 'about') {
-        response = 'Im a rising senior at the University of Chicago studying Economics, Creative Computing, and Computer Science';
+        response = 'I am a web developer with a passion for UI/UX design.';
       } else if (command.toLowerCase() === 'help') {
         response = 'Type "commands" to see a list of available commands.';
       } else {
@@ -25,8 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Clear the input
       inputElement.value = '';
-      var outputContainer = document.getElementById('output-container');
-      outputContainer.scrollTop = outputContainer.scrollHeight;
+
+      // Scroll to the bottom of the output to show the latest entry
+      outputElement.scrollTop = outputElement.scrollHeight;
     }
   });
 });
