@@ -98,8 +98,8 @@ h2, h3, h4, h5, h6 {
   #status-indicator.looking {
     display: inline-block;
     background: url('../assets/images/green_glow.gif');
-    width: 20pt; /* Size of the indicator dot */
-    height: 20pt; /* Size of the indicator dot */
+    width: 10pt; /* Size of the indicator dot */
+    height: 10pt; /* Size of the indicator dot */
     margin-right: 5px; /* Space between dot and the text */
     vertical-align: middle; /* Aligns with the text properly */
   }
