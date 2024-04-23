@@ -23,8 +23,9 @@ h1 {
   text-align: left;
   }
 
+
 h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
+    font-family: 'Montserrat', sans-serif;
 }
 
 #navbar {
@@ -36,12 +37,11 @@ h2, h3, h4, h5, h6 {
 }
 
 #nav-container {
-  max-width: 1200px; /* Maximum width of your navigation content */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Style the navigation links */
 #navbar ul {
   list-style-type: none;
   padding: 0;
@@ -51,7 +51,7 @@ h2, h3, h4, h5, h6 {
 }
 
 #navbar li {
-  padding: 16px 20px; /* Vertical and horizontal padding */
+  padding: 16px 20px;
 }
 
 #navbar a {
@@ -66,10 +66,12 @@ h2, h3, h4, h5, h6 {
 
   #container {
     display: flex;
+    flex-direction: row;
     min-height: 100vh;
-    align-items: center; /* Center children vertically */
-    justify-content: center; /* Center children horizontally */
+    align-items: center;
+    justify-content: center;
     padding: 20px;
+    padding-bottom: 0px;
     margin-top: -70px;
   }
   
@@ -80,16 +82,16 @@ h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px; /* Or adjust to fit the smartphone screen area */;
+    padding: 0px;
     margin-left: -10px;
     margin-top: -50px;
   }
 
   #smartphone-content {
-    text-align: center; /* Center the text inside the phone */
     text-align: center;
-    padding: 20px; /* Make sure there's no extra padding */
-    margin: 10px; /* Make sure there's no extra margin */
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,20 +100,20 @@ h2, h3, h4, h5, h6 {
   }
 
   #profile-container {
-    position: relative; /* This will be positioned relative to the nearest positioned ancestor */
+    position: relative;
     top: -25px;
     text-align: center;
   }
 
   .profile-photo {
-    display: block; /* Images are inline by default which could cause some issues with positioning */
-    margin: 0 auto; /* This will center the image in the container */
-    /* Make sure the image is not too large for the overlap */
-    width: 400px; /* Adjust as necessary */
-    height: 300px; /* Adjust as necessary */
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 340px;
     object-fit: cover;
     position: relative;
-    margin-top: 20px;
+    margin-top: -25px;
+    padding-bottom: 0px;
   }
   
   #sidebar {
@@ -125,17 +127,17 @@ h2, h3, h4, h5, h6 {
   
   #recruitment-status {
     margin-top: 50px;
-    margin-bottom: 20px; /* Space between recruitment status and the next section */
+    margin-bottom: 20px;
   }
   
   #status-indicator.not-looking {
     display: inline-block;
     background-color: red;
-    border-radius: 50%; /* Makes it a circle */
-    width: 10px; /* Size of the indicator dot */
-    height: 10px; /* Size of the indicator dot */
-    margin-right: 5px; /* Space between dot and the text */
-    vertical-align: middle; /* Aligns with the text properly */
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
   }
 
   #status-indicator.looking {
@@ -148,28 +150,6 @@ h2, h3, h4, h5, h6 {
     vertical-align: middle;
   }
 
-  #about-me {
-    background-color: #f2d9e9;
-    color: #412535; /* Text color */
-    margin: 0 auto; /* This centers the div if it has a set width */
-    width: 100%; /* You might need to adjust this to fit the aspect ratio of your background image */
-    height: 100%; /* Adjust the height as needed */
-    display: flex;
-    flex-direction: column; /* Aligns content in a column */
-    align-items: center; /* Centers content horizontally */
-    box-sizing: border-box;
-  }
-  
-  #about-me ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #about-me ul li {
-    margin-bottom: 10px; /* Space between list items */
-  }
-  
   
   button {
     background-color: #ce76a8;
@@ -208,7 +188,7 @@ h2, h3, h4, h5, h6 {
   #output-container {
     height: 100%;
     position: relative;
-    overflow-y: auto; /* Hide overflow */
+    overflow-y: auto;
   }
 
   #output {
@@ -243,33 +223,131 @@ h2, h3, h4, h5, h6 {
   }
   
   #about-section {
-    background-color: #FFC0CB; /* Light pink background */
+    background-color: #FFC0CB;
     display: flex;
-    justify-content: space-between; /* This separates the two columns */
-    padding: 20px;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: auto;
+    align-items: center;
   }
   
   .about-column, .photo-column {
-    flex: 1; /* This makes both columns take up equal space */
-    padding: 20px;
+    flex: 1;
+    padding: 10px;
   }
   
   .about-column {
-    color: #000;
+    color: #50253f;
     font-family: 'Montserrat';
+    justify-content: center center;
+    align-content: center;
+    position: relative;
+    margin-left: 120px;
   }
   
   .photo-column {
-    /* Styling specific to the photo column */
     display: flex;
     width: 300pt;
     height: 300pt;
-    justify-content: center; /* Center the photo in the column */
-    align-items: center; /* Align the photo vertically */
+    justify-content: center;
+    align-items: center;
+    padding-right: 70px;
+    margin-left: -100px;
   }
   
   .about-photo {
-    width: 300pt;
+    width: 200pt;
     border-radius: 100%;
   }
   
+  #skills-section {
+    background-color: #140d2e;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #skills-h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  #skills-container {
+    width: 100%;
+    padding: 0 20px;
+    align-content: center;
+    box-sizing: border-box;
+    height: auto;
+    justify-content: center;
+  }
+  
+  #skills ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    padding-bottom: 70px;
+  }
+  
+  #skills li {
+    padding: 10px 20px;
+    background-color: #ce76a8;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+
+
+
+/* FOR PHONES*/
+
+@media screen and (max-width: 768px) {
+  #container {
+    flex-direction: column;
+  }
+  
+  #smartphone, #sidebar {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    max-width: none;
+  }
+
+  .profile-photo, #command-input, #output-container {
+    width: 90%;
+  }
+
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  #interactive-terminal, #output {
+    padding: 15px;
+  }
+
+  #command-input {
+    width: calc(100% - 30px);
+    margin-left: 0px;
+    bottom: 0;
+  }
+}
