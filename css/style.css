@@ -97,9 +97,9 @@ h2, h3, h4, h5, h6 {
 
   #status-indicator.looking {
     display: inline-block;
-    background: url('../assets/images/green_glow.gif') no-repeat center center;
-    width: 20px; /* Size of the indicator dot */
-    height: 20px; /* Size of the indicator dot */
+    background: url('../assets/images/green_glow.gif') center center;
+    width: 20%; /* Size of the indicator dot */
+    height: 20%; /* Size of the indicator dot */
     margin-right: 5px; /* Space between dot and the text */
     vertical-align: middle; /* Aligns with the text properly */
   }
