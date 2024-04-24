@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   var outputElement = document.getElementById('output');
   var inputElement = document.getElementById('command-input');
+  outputElement.innerHTML += '<li>You can type below! Try saying "commands"</li>';
 
   inputElement.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
@@ -11,8 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
         response = 'Available commands: hello, about, facts, help';
       } else if (command.toLowerCase() === 'hello') {
         response = 'Hello! Nice to meet you, Im Harriet :)';
+      } else if (command.toLowerCase() === 'hi') {
+        response = 'hi! Nice to meet you, Im Harriet :)';
+      } else if (command.toLowerCase() === 'hey') {
+        response = 'hey! Nice to meet you, Im Harriet :)';
       } else if (command.toLowerCase() === 'about') {
-        response = 'Im a rising senior at the University of Chicago<br>studying Economics, Creative Computing, and Computer Science.';
+        response = 'Im a rising senior at the University of Chicago<br>studying Economics, Creative Computing, and<br>Computer Science.';
       } else if (command.toLowerCase() === 'help') {
         response = 'Type "commands" to see a list of available commands.';
       } else if (command.toLowerCase() === 'facts') {

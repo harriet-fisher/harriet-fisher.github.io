@@ -107,3 +107,165 @@ h2, h3, h4, h5, h6 {
     background-color: #ececec; /* Optional: adds a hover effect */
 }
 
+#browser-frame {
+  width: 90%;
+  margin: 40px auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff; /* Default light background for better visibility */
+  border: 1px solid #ddd; /* Subtle border */
+}
+
+#search-bar {
+  display: flex;
+  background: url('../assets/images/search_bar.png') center center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  object-fit: contain;
+  width:100%;
+  position: relative;
+}
+
+.search-img {
+  display: flex;
+  object-fit: contain;
+  width:100%;
+  position: relative;
+}
+
+#tab-bar {
+  display: flex;
+  background-color: #e1e1e1; /* Light grey background for the tabs */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tab {
+  flex-grow: 1;
+  padding: 12px 20px;
+  border: none;
+  background: #f0f0f0; /* Lighter for inactive tabs */
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.3s, font-weight 0.3s;
+  border: #666;
+  border-width: 4px;
+}
+
+.tab:hover, .tab:focus {
+  background-color: #d9d9d9; /* Slightly darker on hover/focus */
+  font-weight: bold; /* Make text bold when tab is active or hovered */
+}
+
+/* Content window styling */
+#content-window {
+  padding: 20px;
+  height: 600px; /* Adjust height based on your content needs */
+  overflow-y: auto; /* Allows scrolling inside the window if content is too long */
+}
+
+.tab-content {
+  display: none; /* Hide all tab content by default */
+  animation: fadeIn 0.5s; /* Fade in animation for smoother transitions */
+}
+
+.tab-content img {
+  width: 100%; /* Full width images within content */
+  height: auto;
+  border-radius: 4px; /* Soft rounded corners for images */
+  margin-bottom: 20px;
+}
+
+.tab-content p {
+  font-size: 18px; /* Slightly larger paragraph text */
+  color: #666; /* Dark grey for readable text */
+  line-height: 1.6; /* Improved line height for better readability */
+}
+
+/* Keyframes for fade in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.swiper-container {
+  width: 100%; /* Full width of the container */
+  margin: auto; /* Center the swiper container horizontally */
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.swiper-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  padding-bottom: 30px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure each slide takes full width */
+}
+
+.swiper-slide img {
+  display: block;
+  padding: 20px;
+  max-width: 80%;
+  border-radius: 20%;
+  height: auto;
+  margin: auto;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-size: 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: -60px; /* Adjust this value as needed */
+  background-image: url('path-to-prev-arrow.png'); /* Add your custom arrow image */
+}
+
+.swiper-button-next {
+  right: -60px; /* Adjust this value as needed */
+  background-image: url('path-to-next-arrow.png'); /* Add your custom arrow image */
+}
+
+.swiper-pagination {
+  bottom: 10px; /* Adjust as needed */
+  left: 0;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Correctly size and place pagination if used */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+
+/* You may want to add styles for your custom scrollbar if you include it */
+.swiper-scrollbar {
+  background: rgba(255,255,255,0.5);
+  height: 4px;
+}
+

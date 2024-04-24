@@ -189,6 +189,8 @@ h2, h3, h4, h5, h6 {
     height: 100%;
     position: relative;
     overflow-y: auto;
+    margin-top: -10px;
+    padding: 0px 5px;
   }
 
   #output {
@@ -203,7 +205,7 @@ h2, h3, h4, h5, h6 {
   }
   
   #command-input {
-    width: 604px;
+    width: 587px;
     height: 20px;
     position: relative;
     bottom: -30px;

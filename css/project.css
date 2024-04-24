@@ -252,3 +252,22 @@ p {
     transition: color 0.3s ease;
     text-decoration: underline;
   }
+
+/* Styling the browser frame to mimic a web browser's look and feel */
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+    #browser-frame {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .tab {
+        padding: 10px 15px; /* Smaller padding on smaller screens */
+        font-size: 14px; /* Smaller font size on smaller screens */
+    }
+
+    #content-window {
+        height: auto; /* More flexible in mobile environments */
+    }
+}

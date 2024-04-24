@@ -18,23 +18,62 @@
     </div>
   </nav>
   <h1>My Work</h1>
-  <section id="gallery">
-    <div class="gallery-container">
-        <div class="gallery-item">
-            <a href="portfolio/digital-metamorphosis.html">
-                <img src="assets/images/portfolio-covers/digital-cover.png" alt="Digital Metamorphosis">
-                <p>Digital Metamorphosis: 3D Art Project</p>
-            </a>
-        </div>
-        <div class="gallery-item">
-            <a href="portfolio/project-title-2">
-                <img src="path/to/image2.jpg" alt="Description of image 2">
-                <p>Project Description 2</p>
-            </a>
-        </div>
-        <!-- More gallery items with unique hrefs -->
+  <div id="browser-frame">
+    <div id="search-bar">
+      <img src="./assets/images/search_bar.png" class="search-img" alt="search bar">
     </div>
-</section>
+    <div id="tab-bar">
+        <button class="tab" onclick="switchTab('tab1')">Project 1</button>
+        <button class="tab" onclick="switchTab('tab2')">Project 2</button>
+    </div>
+    <div id="content-window">
+        <div id="tab1" class="tab-content">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="../assets/images/portfolio-covers/digital-cover.png" alt="Image 1"></div>
+              <div class="swiper-slide"><img src="../assets/projects/digital-meta/dm1.png" alt="Image 2"></div>
+              <div class="swiper-slide"><img src="../assets/projects/digital-meta/dm2.png" alt="Image 3"></div>
+              <div class="swiper-slide"><img src="../assets/projects/digital-meta/dm3.jpg" alt="Image 4"></div>
+              <div class="swiper-slide"><img src="../assets/projects/digital-meta/dm4.jpg" alt="Image 5"></div>
+              <div class="swiper-slide"><img src="../assets/projects/digital-meta/dm5.jpg" alt="Image 6"></div>
+              <div class="swiper-slide"><img src="../assets/projects/digital-meta/dm6.jpg" alt="Image 7"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <script>
+            var swiper = new Swiper('.swiper-container', {
+              direction: 'horizontal',
+              loop: true,
+          
+              // If we need pagination
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+          
+              // Navigation arrows
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+          
+              // And if we need scrollbar
+              scrollbar: {
+                el: '.swiper-scrollbar',
+              },
+            });
+          </script>
+            <p>Digital Metamorphosis: 3D Art Project</p>
+        </div>
+        <div id="tab2" class="tab-content" style="display:none;">
+            <img src="path/to/image2.jpg" alt="Description of image 2">
+            <p>Project Description 2</p>
+        </div>
+        <!-- More tab contents for additional projects -->
+    </div>
+</div>
 
 
 </body>
