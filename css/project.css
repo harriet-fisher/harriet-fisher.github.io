@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff
+  }
+
+span {
+  font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
+  font-weight: bold;
+  color: #fff;
+  font-size: 28px;
+}
+  
+h1 {
+  font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
+  font-weight: bold;
+  color: #f2d9e9;
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+  }
+
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+#navbar {
+  color: #140d2e;
+  overflow: hidden;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+#nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar li {
+  padding: 16px 20px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #140d2e;
+  transition: color 0.3s;
+}
+
+#navbar a:hover {
+  color: #712856; /* Light pink color for hover state */
+}
+
+#header-container {
+    align-content: center;
+    justify-content: center;
+}
+
+#project-header {
+    text-align: center;
+    padding: 0px;
+    margin-bottom: -50px;
+    align-content: center;
+    background-color: #f2d9e900;
+    color:#140d2e;
+  }
+  
+#project-main {
+    padding: 20px;
+    width: 100%;
+  }
+  
+#project-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+#project-image {
+    /* Style for the project image */
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+#project-description {
+    /* Style for the project description */
+    max-width: 50%;
+  }
+
+#project-content {
+    /* Additional styling for the detailed project content */
+  }
+  
+#project-footer {
+    background-color: #140d2e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+.swiper-container {
+    width: 100%; /* Full width of the container */
+    margin: auto; /* Center the swiper container horizontally */
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.swiper-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 30px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure each slide takes full width */
+}
+
+.swiper-slide img {
+    display: block;
+    padding: 20px;
+    max-width: 80%;
+    border-radius: 20%;
+    height: auto;
+    margin: auto;
+}
+  
+  .swiper-button-prev, .swiper-button-next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+  
+  .swiper-button-prev {
+    left: -60px; /* Adjust this value as needed */
+    background-image: url('path-to-prev-arrow.png'); /* Add your custom arrow image */
+  }
+  
+  .swiper-button-next {
+    right: -60px; /* Adjust this value as needed */
+    background-image: url('path-to-next-arrow.png'); /* Add your custom arrow image */
+  }
+  
+  .swiper-pagination {
+    bottom: 10px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /* Correctly size and place pagination if used */
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: #fff;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #000;
+  }
+  
+  /* You may want to add styles for your custom scrollbar if you include it */
+  .swiper-scrollbar {
+    background: rgba(255,255,255,0.5);
+    height: 4px;
+  }
+  
+  #footer-section {
+    background-color: #ffffff;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #footer-container {
+    background-color: #fb8eba;
+    height: auto;
+    padding: 20px 0px;
+  }
+
+  #footer-header {
+    color: #5d1042;
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  #footer ul {
+    list-style-type: none;
+    padding: 0px 20px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: relative;
+  }
+  
+  #footer li {
+    padding: 0px 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: normal;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+  }

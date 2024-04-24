@@ -223,7 +223,7 @@ h2, h3, h4, h5, h6 {
   }
   
   #about-section {
-    background-color: #FFC0CB;
+    background-color: #ffffff;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -238,7 +238,7 @@ h2, h3, h4, h5, h6 {
   }
   
   .about-column {
-    color: #50253f;
+    color: #140d2e;
     font-family: 'Montserrat';
     justify-content: center center;
     align-content: center;
@@ -309,7 +309,7 @@ h2, h3, h4, h5, h6 {
     padding: 10px 20px;
     background-color: #ce76a8;
     color: white;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     border-radius: 5px;
     margin-bottom: 10px;
