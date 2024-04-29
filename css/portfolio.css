@@ -119,7 +119,7 @@ h3, h4, h5, h6 {
 
 .tab {
   flex-grow: 1;
-  padding: 12px 20px;
+  padding: 12px 10px;
   border: none;
   background: #e1e1e1;
   cursor: pointer;
