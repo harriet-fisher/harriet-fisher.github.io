@@ -1,28 +1,31 @@
 function switchTab(tabName) {
-    var tabs = document.querySelectorAll('.tab-content');
-    for (var i = 0; i < tabs.length; i++) {
-      tabs[i].style.display = 'none';
-    }
-  
-    var tabButtons = document.querySelectorAll('.tab');
-    for (var i = 0; i < tabButtons.length; i++) {
-      tabButtons[i].classList.remove('active');
-    }
-  
-    var activeTabContent = document.getElementById(tabName);
-    var activeTabButton = document.querySelector("[onclick=\"switchTab('" + tabName + "')\"]");
+  var tabs = document.querySelectorAll('.tab-content');
+  var tabButtons = document.querySelectorAll('.tab');
 
-    if (activeTabContent) {
-        activeTabContent.style.display = 'block';
-    }
-    
-    if (activeTabButton) {
-        activeTabButton.classList.add('active');
-        activeTabButton.focus(); // Focus on the active tab button
-    }
-}
-  
-  window.addEventListener('DOMContentLoaded', (event) => {
-    switchTab('tab1');
+  tabs.forEach(tab => tab.style.display = 'none');
+  tabButtons.forEach(button => {
+    button.classList.remove('active');
+    // Here we remove the inline style for the tab buttons to make sure CSS takes over
+    button.style.backgroundColor = '';
+    button.style.color = '';
   });
-  
+
+  var activeTabContent = document.getElementById(tabName);
+  var activeTabButton = document.querySelector(".tab[data-tab='" + tabName + "']");
+  if (activeTabContent && activeTabButton) {
+    activeTabContent.style.display = 'block';
+    activeTabButton.classList.add('active');
+    activeTabButton.style.backgroundColor = '#f0f0f0'; // Example style
+    activeTabButton.style.color = '#000'; // Example style
+  }
+}
+
+document.getElementById('tab-bar').addEventListener('click', function(event) {
+  if (event.target.classList.contains('tab')) {
+      switchTab(event.target.getAttribute('data-tab'));
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  switchTab('tab1');
+});

@@ -35,9 +35,10 @@ h1 {
 
  h3 {
     font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
-    font-weight: bold;
+    font-weight: normal;
+    font-style: italic;
     color: #140d2e;
-    font-size: 20px;
+    font-size: px;
     line-height: 1;
     margin-bottom: -10px;
     text-align: center;
@@ -84,57 +85,14 @@ h3, h4, h5, h6 {
   color: #7a305f;
 }
 
-#gallery {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-}
-
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-.gallery-item {
-    flex-basis: calc(25% - 10px); /* Adjust the percentage based on how many items per row */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.gallery-item p {
-    margin-top: 5px;
-    color: #333;
-}
-
-.gallery-item a {
-    color: inherit;
-    text-decoration: none;
-    display: block;
-}
-
-.gallery-item a:hover, .gallery-item a:focus {
-    background-color: #ececec; /* Optional: adds a hover effect */
-}
-
 #browser-frame {
   width: 90%;
   margin: 40px auto;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   overflow: hidden;
-  background-color: #fff; /* Default light background for better visibility */
-  border: 1px solid #ddd; /* Subtle border */
+  background-color: #fff;
+  border: 1px solid #ddd;
 }
 
 #search-bar {
@@ -155,7 +113,7 @@ h3, h4, h5, h6 {
 
 #tab-bar {
   display: flex;
-  background-color: #f0f0f0; /* Light grey background for the tabs */
+  background-color: #f0f0f0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -179,6 +137,11 @@ h3, h4, h5, h6 {
 }
 
 .tab:focus {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.tab:active {
   background-color: #f0f0f0;
   font-weight: bold;
 }
@@ -212,84 +175,3 @@ h3, h4, h5, h6 {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-
-.swiper-container {
-  width: 100%; /* Full width of the container */
-  margin: auto; /* Center the swiper container horizontally */
-  position: relative;
-  padding-bottom: 10px;
-}
-
-.swiper-wrapper {
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  padding-bottom: 30px;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%; /* Ensure each slide takes full width */
-}
-
-.swiper-slide img {
-  display: block;
-  padding: 20px;
-  max-width: 80%;
-  border-radius: 20%;
-  height: auto;
-  margin: auto;
-}
-
-.swiper-button-prev, .swiper-button-next {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-size: 50% 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 10;
-}
-
-.swiper-button-prev {
-  left: -60px; /* Adjust this value as needed */
-  background-image: url('path-to-prev-arrow.png'); /* Add your custom arrow image */
-}
-
-.swiper-button-next {
-  right: -60px; /* Adjust this value as needed */
-  background-image: url('path-to-next-arrow.png'); /* Add your custom arrow image */
-}
-
-.swiper-pagination {
-  bottom: 10px; /* Adjust as needed */
-  left: 0;
-  width: 100%;
-  margin-top: 20px;
-  padding-bottom: 20px;
-}
-
-/* Correctly size and place pagination if used */
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  opacity: 1;
-  background: #fff;
-}
-
-.swiper-pagination-bullet-active {
-  background: #000;
-}
-
-/* You may want to add styles for your custom scrollbar if you include it */
-.swiper-scrollbar {
-  background: rgba(255,255,255,0.5);
-  height: 4px;
-}
-
