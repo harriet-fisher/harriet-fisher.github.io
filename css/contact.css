@@ -94,6 +94,14 @@ h2, h3, h4, h5, h6 {
     margin-top: -10px;
     padding-bottom: 10px;
   }
+  
+  .contact-p a {
+    color: inherit;
+  }
+  
+  .contact-p a:hover {
+    color: #f2d9e9;
+  }
 
   #gif-container {
     align-content: center;
