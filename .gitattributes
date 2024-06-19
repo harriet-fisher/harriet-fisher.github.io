@@ -1,0 +1,4 @@
+assets/projects/dm/studio.hdr filter=lfs diff=lfs merge=lfs -text
+assets/projects/mbb/mbb-1.mov filter=lfs diff=lfs merge=lfs -text
+assets/mbb/mbb-3.mov filter=lfs diff=lfs merge=lfs -text
+assets/projects/dm/maternity.glb filter=lfs diff=lfs merge=lfs -text
