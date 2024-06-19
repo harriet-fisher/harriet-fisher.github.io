@@ -8,14 +8,14 @@ body, html {
   }
 
 span {
-  font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
+  font-family: 'Montserrat', sans-serif; 
   font-weight: bold;
   color: #fff;
   font-size: 28px;
 }
   
 h1 {
-  font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
+  font-family: 'Montserrat', sans-serif; 
   font-weight: bold;
   color: #140d2e;
   font-size: 40px;
@@ -24,7 +24,7 @@ h1 {
   }
 
   h2 {
-    font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #140d2e;
     font-size: 20px;
@@ -34,7 +34,7 @@ h1 {
     }
 
  h3 {
-    font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
+    font-family: 'Montserrat', sans-serif; 
     font-weight: normal;
     font-style: italic;
     color: #140d2e;
@@ -132,8 +132,8 @@ h3, h4, h5, h6 {
 }
 
 .tab:hover {
-  background-color: #d9d9d9; /* Slightly darker on hover/focus */
-  font-weight: bold; /* Make text bold when tab is active or hovered */
+  background-color: #d9d9d9; 
+  font-weight: bold; 
 }
 
 .tab:focus {
@@ -153,24 +153,38 @@ h3, h4, h5, h6 {
 }
 
 .tab-content {
-  display: none; /* Hide all tab content by default */
-  animation: fadeIn 0.5s; /* Fade in animation for smoother transitions */
+  display: none; 
+  animation: fadeIn 0.5s; 
 }
 
 .tab-content img {
-  width: 100%; /* Full width images within content */
+  width: 100%; 
   height: auto;
-  border-radius: 4px; /* Soft rounded corners for images */
+  border-radius: 4px; 
   margin-bottom: 20px;
 }
 
 .tab-content p {
-  font-size: 18px; /* Slightly larger paragraph text */
-  color: #666; /* Dark grey for readable text */
-  line-height: 1.6; /* Improved line height for better readability */
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6; 
 }
 
-/* Keyframes for fade in animation */
+.resume-photo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100;
+  margin: 0 auto;
+}
+
+.resume-photo {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: cover;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
