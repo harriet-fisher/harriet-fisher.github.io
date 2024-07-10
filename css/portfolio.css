@@ -4,8 +4,16 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
   }
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
 
 span {
   font-family: 'Montserrat', sans-serif; 
@@ -87,14 +95,16 @@ h3, h4, h5, h6 {
 
 #browser-frame {
   width: 90%;
-  height: 100vh;
+  height: 1000px;
   margin: 40px auto;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   overflow: hidden;
   background-color: #fff;
   border: 1px solid #ddd;
-}
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;}
 
 #search-bar {
   display: flex;
@@ -151,11 +161,13 @@ h3, h4, h5, h6 {
   padding: 20px;
   height: 800px;
   overflow-y: auto;
+  flex-grow: 1;
 }
 
 .tab-content {
   display: none; 
-  animation: fadeIn 0.5s; 
+  animation: fadeIn 0.5s;
+  height: 100%;
 }
 
 .tab-content img {
