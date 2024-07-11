@@ -4,21 +4,23 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #140d2e
+    background-image: url('../assets/images/repeat_y_bg_portfolio.svg');
+    background-size: cover;
+    background-repeat: repeat-y;
   }
 
 span {
   font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
   font-weight: bold;
-  color: #fff;
+  color: #3d4041;
   font-size: 28px;
 }
   
 h1 {
   font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
   font-weight: bold;
-  color: #ffffff;
-  font-size: 60px;
+  color: #3d4041;
+  font-size: 80px;
   line-height: 1;
   text-align: left;
   }
@@ -30,10 +32,11 @@ h2, h3, h4, h5, h6 {
 
 #navbar {
   background-color: #33333300;
-  color: white;
+  color: #5b5f60;
   overflow: hidden;
   font-family: 'Montserrat';
   font-weight: bold;
+  font-size: large;
 }
 
 #nav-container {
@@ -55,36 +58,39 @@ h2, h3, h4, h5, h6 {
 }
 
 #navbar a {
-  text-decoration: none; /* Remove underlines from links */
-  color: white; /* White text color */
-  transition: color 0.3s; /* Smooth color transition */
+  text-decoration: none;
+  color: #5b5f60;
+  transition: color 0.3s;
+  font-size: 12pt;
 }
 
 #navbar a:hover {
-  color: #f2d9e9; /* Light pink color for hover state */
+  color: #659bbc;
 }
 
   #container {
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
+    min-height: 1000px;
+    width: 95vw;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
+    justify-content: space-around;
+    padding: 0px;
     padding-bottom: 0px;
     margin-top: -70px;
+    margin-bottom: -70px;
   }
   
   #smartphone {
     background: #00000000;
-    height: 600px;
-    width: 400px;
+    height: 1200px;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0px;
-    margin-left: -10px;
-    margin-top: -50px;
+    margin: 0;
+    padding-right: 0px;
   }
 
   #smartphone-content {
@@ -96,20 +102,20 @@ h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
   }
 
   #profile-container {
     position: relative;
-    top: -25px;
+    top: -65px;
     text-align: center;
   }
 
   .profile-photo {
     display: block;
     margin: 0 auto;
-    width: 400px;
-    height: 340px;
+    width: 550px;
+    height: 550px;
     object-fit: cover;
     position: relative;
     margin-top: -25px;
@@ -117,17 +123,19 @@ h2, h3, h4, h5, h6 {
   }
   
   #sidebar {
-    max-width: 1000px;
+    width: 45%;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    position: relative;
     margin-top: -20px;
-    padding: 20px;
+    margin-left:-100px;
+    align-items: center;
+    justify-content: center;
   }
   
   #recruitment-status {
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 20px;
+    color: #404141;
   }
   
   #status-indicator.not-looking {
@@ -137,6 +145,7 @@ h2, h3, h4, h5, h6 {
     width: 10px;
     height: 10px;
     margin-right: 5px;
+    margin-bottom: 10px;
     vertical-align: middle;
   }
 
@@ -147,15 +156,16 @@ h2, h3, h4, h5, h6 {
     width: 20px;
     height: 20px;
     margin-right: 5px;
+    margin-bottom: 10px;
     vertical-align: middle;
   }
 
   
   button {
-    background-color: #ce76a8;
+    background-color: #cec5e5;
     width: 250px;
     height: 50px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Montserrat';
     font-weight: bold;
     border: none;
@@ -163,61 +173,61 @@ h2, h3, h4, h5, h6 {
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-    text-transform: uppercase; /* Stylistic choice for button text */
+    text-transform: uppercase;
     transition: background-color 0.3s ease;
     position: relative;
 
   }
   
   button:hover {
-    background-color: #5d1042; /* Darken button on hover */
+    background-color: #b397d9;
+    color: #ffffff;
   }
   
   #interactive-terminal {
     position: relative;
-    background: #140d2e url('../assets/images/browser_bg_2.png') no-repeat center center;
+    background: url('../assets/images/browser_bg.svg') no-repeat center center;
     background-size: contain;
-    color: rgb(255, 102, 235);
-    padding: 30px;
-    margin-left: -47px;
+    width: 800px;
+    height: 500px;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(35, 32, 32);
     font-family: 'Courier New', Courier, monospace;
-    width: 100%;
-    overflow: hidden;
 }
   
   #output-container {
-    height: 100%;
-    position: relative;
+    width: 100%;
     overflow-y: auto;
-    margin-top: -10px;
-    padding: 0px 5px;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-left: -50px;
   }
 
   #output {
     list-style-type: none;
-    padding-top: 0px;
-    margin-top: 0px;
-    margin-left: -15px;
-    bottom: -20px;
     position: relative;
-    height: 250px;
     overflow-y: auto;
+    color: #45474c;
+    width: 100%;
   }
   
   #command-input {
-    width: 587px;
-    height: 20px;
     position: relative;
     bottom: -30px;
-    margin-left: 14px;
-    background: #000;
+    width: 796px;
+    margin-left: -40px;
+    background: #5f5f5f;
     border: none;
-    color: rgb(255, 102, 235);
+    color: rgb(255, 255, 255);
     font-family: 'Courier New', Courier, monospace;
   }
   
   #command-input::placeholder {
-    color: rgb(255, 102, 235);
+    color: rgb(255, 255, 255);
   }
   
   #command-input:focus {
@@ -225,11 +235,12 @@ h2, h3, h4, h5, h6 {
   }
   
   #about-section {
-    background-color: #ffffff;
+    background-color: #ffffff00;
     display: flex;
     align-content: center;
     justify-content: space-between;
     padding: 10px;
+    margin-top: -20px;
     height: auto;
     align-items: center;
   }
@@ -274,7 +285,7 @@ h2, h3, h4, h5, h6 {
   }
   
   #skills-h2 {
-    color: #ffffff;
+    color: #39393c;
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -309,8 +320,8 @@ h2, h3, h4, h5, h6 {
   
   #skills li {
     padding: 10px 20px;
-    background-color: #ce76a8;
-    color: white;
+    background-color: #29467d;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: bold;
     border-radius: 5px;
@@ -328,13 +339,13 @@ h2, h3, h4, h5, h6 {
   }
 
   #footer-container {
-    background-color: #ffffff;
+    background-color: #ffffff00;
     height: auto;
     padding: 30px 0px;
   }
 
   #footer-header {
-    color: #5d1042;
+    color: #3b3b3b;
     text-align: left;
     font-size: 20px;
     font-weight: normal;
@@ -355,7 +366,7 @@ h2, h3, h4, h5, h6 {
   
   #footer li {
     padding: 0px 40px;
-    color: #5d1042;
+    color: #535253;
     font-size: 18px;
     font-weight: normal;
     border-radius: 5px;
@@ -364,7 +375,7 @@ h2, h3, h4, h5, h6 {
   }
 
   a {
-    color: #5d1042;
+    color: #656565;
     text-decoration: none;
     transition: color 0.3s ease;
     text-decoration: underline;
