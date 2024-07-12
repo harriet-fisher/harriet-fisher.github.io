@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (command.toLowerCase() === 'hey') {
         response = 'Hey! Nice to meet you, I\'m Harriet :)';
       } else if (command.toLowerCase() === 'about') {
-        response = '<img src="./assets/images/about_google.png" alt="About Image" style="width:100%; height:auto;">';
+        response = '<img src="./assets/images/about_google_2.png" alt="About Image" style="width:970px; margin-left:-10px; margin-top:-10px">';
       } else if (command.toLowerCase() === 'help') {
         response = 'Type "commands" to see a list of available commands.';
       } else if (command.toLowerCase() === 'facts') {
-        response = 'Here are some fun facts about me: I love movies and recently produced a feature length film, I love travelling and spent my gap year in Italy, and I love to cook';
+        response = '<img src="./assets/images/facts_google.png" alt="About Image" style="height:450px; margin-left:-10px; margin-top:-10px">';
       } else {
         response = 'Command not recognized.';
       }

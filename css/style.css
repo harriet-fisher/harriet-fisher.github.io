@@ -75,20 +75,15 @@ h2, h3, h4, h5, h6 {
   #container {
     display: flex;
     flex-direction: row;
-    min-height: 1000px;
     width: 95vw;
     align-items: center;
-    justify-content: space-around;
-    padding: 0px;
-    padding-bottom: 0px;
-    margin-top: -70px;
     margin-bottom: -70px;
   }
   
   #smartphone {
     background: #00000000;
     height: 1200px;
-    width: 60%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,18 +122,19 @@ h2, h3, h4, h5, h6 {
   }
   
   #sidebar {
-    width: 45%;
+    width: 60%;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    margin-top: -20px;
-    margin-left:-100px;
-    align-items: center;
-    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   
   #recruitment-status {
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: -50px;
     color: #404141;
   }
   
@@ -191,12 +187,11 @@ h2, h3, h4, h5, h6 {
     position: relative;
     background: url('../assets/images/browser_bg_2.svg') no-repeat center center;
     background-size: contain;
-    width: 800px;
-    height: 600px;
-    padding: 40px;
-    box-sizing: border-box;
+    width: 1000px;
+    height: 900px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     color: rgb(35, 32, 32);
 }
   
@@ -214,6 +209,7 @@ h2, h3, h4, h5, h6 {
     color: #45474c;
     width: 100%;
     font-family: 'ProductSans';
+    margin-left: 20px;
   }
 
   .search-container {
@@ -225,14 +221,13 @@ h2, h3, h4, h5, h6 {
     width: 100%;
     position: relative;
     padding: 10px;
-    margin-top: 10px;
   }
 
   .goog-logo {
     width: 300px;
     height: auto;
     align-self: center;
-    margin-top: 40px;
+    margin-top: 150px;
   }
   
   .search-image{
