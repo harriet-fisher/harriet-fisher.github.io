@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: 'ProductSans';
+  src: url('../assets/fonts/Product\ Sans\ Regular.ttf');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+  }
+
+span {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+    color: #fff;
+    font-size: 28px;
+  }
+    
+  h1 {
+    font-family: 'ProductSans', sans-serif; 
+    font-weight: bold;
+    color: #505050;
+    padding-top: 60px;
+    margin: 0px;
+    font-size: 50px;
+    line-height: 1;
+    text-align: center;
+    }
+  
+.proj-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-position: top;
+    background-size: cover;
+    height: 800px;
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+
+.photo-container img {
+    width: 800px;
+    height:max-content
+}
+
+.text-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: 'ProductSans';
+}
+
+.text-container h1 {
+    font-family: 'ProductSans';
+    color: #282828;
+    background-color: #ffffff00;
+    margin-bottom: 9px;
+}
+
+.text-container h2 {
+    font-family: 'ProductSans';
+    color: #5b5b5b;
+    background-color: #ffffff00;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+.text-container p {
+    font-family: 'ProductSans';
+    color: #6b6b6b;
+    background-color: #ffffff00;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+.text-container li {
+    font-family: 'ProductSans';
+    color: #6b6b6b;
+    background-color: #ffffff00;
+    margin-bottom: 0px;
+}
+
+.proj-button {
+    background-color: #dac2f4;
+    border: none;
+    color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background-color: #cfa6ec;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

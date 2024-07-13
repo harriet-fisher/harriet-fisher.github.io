@@ -15,8 +15,8 @@ function switchTab(tabName) {
   if (activeTabContent && activeTabButton) {
     activeTabContent.style.display = 'block';
     activeTabButton.classList.add('active');
-    activeTabButton.style.backgroundColor = '#f0f0f0'; // Example style
-    activeTabButton.style.color = '#000'; // Example style
+    activeTabButton.style.backgroundColor = '#f0f0f0';
+    activeTabButton.style.color = '#000';
   }
 }
 
@@ -27,5 +27,5 @@ document.getElementById('tab-bar').addEventListener('click', function(event) {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  switchTab('tab1');
+  switchTab('coding');
 });

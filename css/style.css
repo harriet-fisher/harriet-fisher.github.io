@@ -14,14 +14,14 @@ body, html {
   }
 
 span {
-  font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #3d4041;
   font-size: 28px;
 }
   
 h1 {
-  font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #3d4041;
   font-size: 80px;
