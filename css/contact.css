@@ -4,20 +4,22 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #140d2e
+    background-image: url('../assets/images/repeat_y_bg_portfolio.svg');
+    background-size: cover;
+    background-repeat: repeat-y;
   }
 
 span {
   font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
   font-weight: bold;
-  color: #fff;
+  color: #414141;
   font-size: 28px;
 }
   
 h1 {
   font-family: 'Montserrat', sans-serif; /* Use the Roboto font for headers */
   font-weight: bold;
-  color: #ffffff;
+  color: #414141;
   font-size: 60px;
   line-height: 1;
   text-align: left;
@@ -30,7 +32,7 @@ h2, h3, h4, h5, h6 {
 
 #navbar {
   background-color: #33333300;
-  color: white;
+  color: 414141;
   overflow: hidden;
   font-family: 'Montserrat';
   font-weight: bold;
@@ -55,13 +57,13 @@ h2, h3, h4, h5, h6 {
 }
 
 #navbar a {
-  text-decoration: none; /* Remove underlines from links */
-  color: white; /* White text color */
-  transition: color 0.3s; /* Smooth color transition */
+  text-decoration: none;
+  color: #414141;
+  transition: color 0.3s;
 }
 
 #navbar a:hover {
-  color: #f2d9e9; /* Light pink color for hover state */
+  color: #7cb8d2;
 }
 
 #container {
@@ -70,7 +72,7 @@ h2, h3, h4, h5, h6 {
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-    padding: 0px 50px;
+    padding: 0px 100px;
     margin-top: -20px;
     padding-bottom: 0px;
   }
@@ -88,7 +90,7 @@ h2, h3, h4, h5, h6 {
   }
 
   .contact-p {
-    color: #ffffff;
+    color: #414141;
     font-size: 18px;
     margin-left: -28px;
     margin-top: -10px;
@@ -159,7 +161,7 @@ h2, h3, h4, h5, h6 {
 }
 
 button[type="submit"] {
-    background-color: #5d1042;
+    background-color: #89cbdd;
     color: white;
     border: none;
     padding: 10px 20px;
