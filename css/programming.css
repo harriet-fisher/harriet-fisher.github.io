@@ -37,6 +37,7 @@ span {
     background-position: top;
     background-size: cover;
     height: 800px;
+    padding: 40px;
 }
 
 .photo-container {
