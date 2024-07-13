@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var outputElement = document.getElementById('output');
   var inputElement = document.getElementById('command-input');
 
-  outputElement.innerHTML = 'You can type below! Try saying "commands"';
 
   inputElement.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
