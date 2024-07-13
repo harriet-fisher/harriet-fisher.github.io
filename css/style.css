@@ -65,7 +65,7 @@ h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: #5b5f60;
   transition: color 0.3s;
-  font-size: 12pt;
+  font-size: 14pt;
 }
 
 #navbar a:hover {
@@ -204,13 +204,22 @@ h2, h3, h4, h5, h6 {
 
   #output {
     list-style-type: none;
-    position: relative;
-    overflow-y: auto;
     color: #45474c;
-    width: 100%;
     font-family: 'ProductSans';
     margin-left: 20px;
   }
+
+  #output img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.lower-image {
+  margin-top: 50px;
+  margin-bottom: -100px;
+}
 
   .search-container {
     display: flex;
