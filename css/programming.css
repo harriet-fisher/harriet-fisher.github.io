@@ -97,12 +97,12 @@ span {
     background-color: #dac2f4;
     border: none;
     color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 12px 2px;
   cursor: pointer;
   border-radius: 8px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -111,4 +111,19 @@ span {
 .button:hover {
   background-color: #cfa6ec;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+model-viewer {
+  width: 300px;
+  height: 500px;
+  margin: 20px 20px;
+}
+
+.model-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }

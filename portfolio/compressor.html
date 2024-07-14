@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harriet's Portfolio - compressor</title>
+  <link rel="stylesheet" href="../css/project.css">
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css" rel="stylesheet"/>
+  <style>
+    pre[class*="language-"], code[class*="language-"] {
+        color: #474747;
+        background: #ffffff;
+        text-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <div id="nav-container">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="project-container">
+    <div class="project-title-details">
+      <h1 id="project-title" style="color: #52beed;">SVD Image Compressor</h1>
+      <p><strong>— Project Type</strong></p>
+      <p class="role">AI Cover Letter Writer</p>
+      <p><strong>— Languages</strong></p>
+      <p class="role">Javascript, Ruby, HTML, CSS</p>
+      <p><strong>— Role</strong></p>
+      <p class="role">Developer and Designer</p>
+      <p><strong>— Date</strong></p>
+      <p class="date">2023</p>
+    </div>
+    <div class="project-description">
+      <p>The SVD Image Compressor leverages Singular Value Decomposition to efficiently compress images, optimizing file sizes while maintaining high image quality. This tool can be beneficial for web developers, photographers, and anyone managing large digital image libraries because it offers significant reductions in storage. By providing an intuitive interface and adjustable compression levels, the compressor ensures that users can easily balance between quality and compression.</p>
+    </div>
+  </div>
+<pre>
+  <code class="language-python">
+#Code Snippet
+img = Image.open("compress.jpeg", mode="r")
+img = np.array(img).astype(np.int32)
+
+plt.imshow(img)
+plt.title('Original Picture')
+plt.show()
+
+img_stack = img.reshape ((img.shape[0], -1))
+u, s, vt = np.linalg.svd(img_stack,full_matrices = False)
+
+plt.title('Singular Vals')
+plt.xlabel('n')
+plt.ylabel('Value')
+plt.yscale('log')
+plt.plot(s, color='purple')
+
+def compress(image, k):
+    """
+    Perform svd decomposition and truncate it (using k singular values/vectors)
+    
+    Parameters: 
+        image (np.array): input image (probably, colourful)
+        k (int): approximation rank (number of singular values)
+
+    Returns:
+      reconst_matrix (np.array): reconstructed matrix (tensor in colourful case)
+      
+      s (np.array): array of singular values 
+    """
+    if len (image.shape) == 3:
+      reconst_matrix = np.zeros(image.shape)
+      s = []
+      for i in range(3):
+        u, s_i, vt = np.linalg.svd(image[: ,: , i], full_matrices = False)
+        s.append(s_i)
+        reconst_matrix_ = u [:,:k] @ np.diag(s_i[:k]) @ vt [:k,:]
+        reconst_matrix [:,:,i] = reconst_matrix_
+      reconst_matrix = np.array(reconst_matrix, np.int32)
+    else:
+      u, s, vt = np.linalg.svd(image, full_matrices = False)
+      reconst_matrix = u[:,:k] @ np.diag(s_i[:k]) @ vt[:k,:]
+    return reconst_matrix, s
+
+#end of code snippet
+</code>
+</pre>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js"></script>
+  </div>
+  <div class="carousel-container" style="padding-bottom: 50px;">
+    <div class="carousel-slide active"><img src="../assets/projects/compressor/compress-1.png" alt="Slide 1"></div>
+    <div class="carousel-slide active"><img src="../assets/projects/compressor/compress-2.png" alt="Slide 2"></div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <script src="../js/carousel.js"></script>
+</body>
