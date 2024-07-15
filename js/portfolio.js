@@ -27,5 +27,5 @@ document.getElementById('tab-bar').addEventListener('click', function(event) {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  switchTab('media');
+  switchTab('coding');
 });
