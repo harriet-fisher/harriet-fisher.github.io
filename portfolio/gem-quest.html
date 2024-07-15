@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harriet's Portfolio - lapse</title>
+  <link rel="stylesheet" href="../css/project.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div id="nav-container">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="project-container">
+    <div class="project-title-details">
+      <h1 id="project-title" style="color: rgb(90, 179, 105);">Gem Quest</h1>
+      <p><strong>— Project Type</strong></p>
+      <p class="role">VR Video Game</p>
+      <p><strong>— Role</strong></p>
+      <p class="role">Full Stack Developer</p>
+      <p><strong>— Tools</strong></p>
+      <p class="date">Unity, C#, Blender</p>
+    </div>
+    <div class="project-description" style="width: 60%; margin-right: -40px; margin-left: -30px; margin-top: 50px;">
+      <p>Gem Quest is a charming VR search game created in Unity, where players are immersed in a beautifully rendered, magical landscape. In this single, expansive setting, gems of various types are randomly generated and hidden throughout the environment, waiting to be discovered. Players navigate this mystical world, from rolling hills to serene lakesides, collecting gems to earn points. The ultimate goal is to gather enough gems to unlock a special prize at the end of the rainbow. With its simple, intuitive gameplay and visually appealing graphics, Gem Quest is an game for those who delight in exploration and casual gaming, providing a tranquil yet engaging experience as they search for treasures in an enchanting world.</p>
+      <p>Gem Quest incorporates many technical elements to enhance its gameplay, employing custom scripts developed in C# for a dynamic and immersive experience. Key to its design is the implementation of a randomization algorithm that controls both the type and location of gems within the game’s magical landscape, and also generates custom sprites for the inventory. This algorithm ensures that each playthrough is unique, providing variety and replayability.</p>
+      <p>To add to the interactive experience, Gem Quest is integrated with HTC Vive controls, allowing players to physically explore and interact with the game environment. The integration involves scripting to map the Vive’s motion tracking and controller inputs into natural, intuitive in-game actions. This allows players to seamlessly pick up, collect, and manipulate gems, enhancing the tactile feel of the game.</p>
+      <a href="https://pockyapril.itch.io/nature-fantasy">
+          <button class="button-link" style="background-color: rgb(90, 179, 105);">Play Web Version Here</button>
+      </a>
+      </div>
+  </div>
+  <div class="carousel-container">
+    <div class="carousel-slide active"><img src="../assets/projects/gem_quest/gem_quest.png" alt="Slide 1"></div>
+    <div class="carousel-slide"><img src="../assets/projects/gem_quest/Screenshot 2024-04-10 at 2.01.27 PM.png" alt="Slide 2"></div>
+    <div class="carousel-slide"><img src="../assets/projects/gem_quest/Screenshot 2024-04-10 at 2.01.51 PM.png" alt="Slide 3"></div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <script src="../js/carousel.js"></script>
+</body>
