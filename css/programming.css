@@ -32,11 +32,10 @@ span {
 .proj-container {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 85%;
     justify-content: center;
     background-position: top;
     background-size: cover;
-    height: 700px;
     padding: 40px;
 }
 
@@ -57,7 +56,6 @@ span {
     width: 45%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     padding: 20px;
     font-family: 'ProductSans';
@@ -68,6 +66,7 @@ span {
     color: #282828;
     background-color: #ffffff00;
     margin-bottom: 9px;
+    font-size: 42px;
 }
 
 .text-container h2 {
