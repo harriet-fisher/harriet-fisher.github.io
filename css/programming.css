@@ -34,6 +34,7 @@ span {
     flex-direction: row;
     width: 85%;
     justify-content: center;
+    align-content: center;
     background-position: top;
     background-size: cover;
     padding: 40px;
@@ -71,6 +72,7 @@ span {
 
 .text-container h2 {
     font-family: 'ProductSans';
+    font-size: 28px;
     color: #5b5b5b;
     background-color: #ffffff00;
     margin-bottom: 0px;
