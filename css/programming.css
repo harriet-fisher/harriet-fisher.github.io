@@ -94,13 +94,13 @@ span {
 }
 
 .proj-button {
-    background-color: #dac2f4;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+  background-color: #dac2f4;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 16px;
   margin: 12px 2px;
   cursor: pointer;
@@ -108,7 +108,7 @@ span {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.button:hover {
+.proj-button:hover {
   background-color: #cfa6ec;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
