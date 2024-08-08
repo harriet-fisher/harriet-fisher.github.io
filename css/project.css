@@ -10,7 +10,7 @@ body, html {
     font-family: 'Montserrat', sans-serif;
     background-image: url('../assets/images/repeat_y_bg_portfolio.svg');
     background-size: cover;
-    background-repeat: repeat-y;
+    background-repeat: repeat-y no-repeat-x;
   }
 
   .project-container {
