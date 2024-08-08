@@ -77,6 +77,7 @@ h2, h3, h4, h5, h6 {
     flex-direction: row;
     width: 95vw;
     align-items: center;
+    justify-content: center;
     margin-bottom: -70px;
   }
   
