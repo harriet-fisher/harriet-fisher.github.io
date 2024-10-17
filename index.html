@@ -10,7 +10,7 @@
   <nav id="navbar">
     <div id="nav-container">
       <span id="hamburger-icon">&#9776;</span>
-      <ul>
+      <ul id="navbar-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="#about-section">About</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
@@ -49,7 +49,7 @@
       </div>
     </div>
   </div>
-  <script src="js/script.js"></script>
+
   <section id="about-section">
     <div class="about-column">
       <h2>About Me</h2>
@@ -93,15 +93,6 @@
       </div>
     </div>
   </section>
-  <script>
-    document.getElementById("hamburger-icon").onclick = function() {
-      var menu = document.getElementById("navbar-menu");
-      if (menu.classList.contains("active")) {
-        menu.classList.remove("active");
-      } else {
-        menu.classList.add("active");
-      }
-    };
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>

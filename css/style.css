@@ -516,10 +516,12 @@ h2, h3, h4, h5, h6 {
 
   .profile-photo, #command-input, #output-container {
     width: 90%;
+    height: auto;
   }
 
   .about-photo {
     width: 50%;
+    height: auto;
   }
   
   h1 {
@@ -582,10 +584,12 @@ h2, h3, h4, h5, h6 {
     width: 50%;
     margin: 0 auto;
     padding-bottom: 20px;
+    height: auto;
   }
 
   .about-photo {
     width: 60%;
+    height: auto;
   }
 
   #command-input, #output-container {
