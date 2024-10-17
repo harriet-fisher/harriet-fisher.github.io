@@ -9,6 +9,7 @@
 <body>
   <nav id="navbar">
     <div id="nav-container">
+      <span id="hamburger-icon">&#9776;</span>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="#about-section">About</a></li>
@@ -92,5 +93,15 @@
       </div>
     </div>
   </section>
+  <script>
+    document.getElementById("hamburger-icon").onclick = function() {
+      var menu = document.getElementById("navbar-menu");
+      if (menu.classList.contains("active")) {
+        menu.classList.remove("active");
+      } else {
+        menu.classList.add("active");
+      }
+    };
+  </script>
 </body>
 </html>

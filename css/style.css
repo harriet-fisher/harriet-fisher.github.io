@@ -450,8 +450,57 @@ h2, h3, h4, h5, h6 {
   }
 }
 
+#hamburger-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #5b5f60;
+}
+
+#navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+
+#navbar-menu li {
+  padding: 16px;
+  border-bottom: 1px solid #444;
+}
+
+#navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+#navbar-menu li a:hover {
+  background-color: #575757;
+}
+
+#navbar-menu.active {
+  left: 0;
+}
+
 /* FOR PHONES */
 @media screen and (max-width: 768px) {
+  #hamburger-icon {
+    display: block;
+  }
+
+  #navbar ul {
+    display: none;
+  }
+
   #container {
     flex-direction: column;
     justify-content: center;
@@ -487,7 +536,6 @@ h2, h3, h4, h5, h6 {
     bottom: 0;
   }
 
-  /* Ensure items stack vertically */
   .skills-container, .about-column, .photo-column {
     flex-direction: column;
     width: 100%;
@@ -509,6 +557,14 @@ h2, h3, h4, h5, h6 {
 
 /* FOR TABLETS (iPads) */
 @media screen and (max-width: 1024px) and (min-width: 769px) {
+  #hamburger-icon {
+    display: block;
+  }
+
+  #navbar ul {
+    display: none;
+  }
+
   #container {
     flex-direction: column;
     justify-content: center;
