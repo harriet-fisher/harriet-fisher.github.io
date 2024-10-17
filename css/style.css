@@ -449,3 +449,70 @@ h2, h3, h4, h5, h6 {
     bottom: 0;
   }
 }
+
+/* FOR PHONES */
+@media screen and (max-width: 768px) {
+  #container {
+    flex-direction: column;
+  }
+  
+  #smartphone, #sidebar {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    max-width: none;
+  }
+
+  .profile-photo, #command-input, #output-container {
+    width: 90%;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  #interactive-terminal, #output {
+    padding: 15px;
+  }
+
+  #command-input {
+    width: calc(100% - 30px);
+    margin-left: 0px;
+    bottom: 0;
+  }
+}
+
+/* FOR TABLETS (iPads) */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  #container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #smartphone, #sidebar {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    padding: 20px;
+  }
+
+  .profile-photo {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  #command-input, #output-container {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  #interactive-terminal {
+    width: 90%;
+    padding: 20px;
+  }
+}
