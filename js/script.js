@@ -34,4 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
       outputElement.scrollTop = 0;
     }
   });
+  var hamburgerIcon = document.getElementById('hamburger-icon');
+  var navbar = document.getElementById('navbar');
+
+  hamburgerIcon.addEventListener('click', function() {
+    navbar.classList.toggle('show');
+  });
 });

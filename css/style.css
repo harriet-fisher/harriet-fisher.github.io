@@ -422,10 +422,44 @@ h2, h3, h4, h5, h6 {
     text-decoration: underline;
   }
 
+  #hamburger-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #5b5f60;
+    padding: 20px;
+  }
+  
+  #navbar ul {
+    display: flex;
+  }
+
 /*------------------------------------------------------------------- */
 
 /* FOR SMALLER SCREENS */
 @media screen and (max-width: 900px){
+  #navbar ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 5;
+  }
+
+  #hamburger-icon {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    z-index: 10;
+  }
+
+  #navbar.show ul {
+    display: flex;
+  }
 
   #container {
     flex-direction: column;
