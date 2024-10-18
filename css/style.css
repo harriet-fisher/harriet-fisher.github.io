@@ -44,7 +44,7 @@ h2, h3, h4, h5, h6 {
 }
 
 #nav-container {
-  max-width: 1200px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -78,12 +78,10 @@ h2, h3, h4, h5, h6 {
   width: 95vw;
   align-items: center;
   justify-content: center;
-  margin-bottom: -70px;
 }
   
   #smartphone {
     background: #00000000;
-    height: 1200px;
     width: 40%;
     display: flex;
     justify-content: center;
@@ -96,8 +94,7 @@ h2, h3, h4, h5, h6 {
   #smartphone-content {
     text-align: center;
     text-align: center;
-    padding: 20px;
-    margin: 10px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,7 +104,6 @@ h2, h3, h4, h5, h6 {
 
   #profile-container {
     position: relative;
-    top: -65px;
     text-align: center;
   }
 
@@ -126,19 +122,21 @@ h2, h3, h4, h5, h6 {
     width: 60%;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 80%;
+    height: auto;
+    padding: 20px;
   }
   
   #recruitment-status {
+    color: #404141;
+    text-align: left;
+    justify-content: center;
     margin-top: 100px;
     margin-bottom: -50px;
-    color: #404141;
   }
   
   #status-indicator.not-looking {
@@ -466,8 +464,10 @@ h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     width: 90%;
-    padding: 10px;
+    padding: 20px;
+    margin-top: 10px;
   }
+
 
   #interactive-terminal{
     margin-top: -100px;
@@ -479,7 +479,7 @@ h2, h3, h4, h5, h6 {
     width: 100%;
     height: auto;
     padding: 0;
-    margin-bottom: -150px;
+    margin-bottom: 0px;
   }
 
   #output img {
@@ -495,8 +495,8 @@ h2, h3, h4, h5, h6 {
   }
 
   .profile-photo {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
   }
 
   #about-section {
