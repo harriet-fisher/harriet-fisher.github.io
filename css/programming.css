@@ -9,24 +9,25 @@ body, html {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
+    font-size: 1rem;
   }
 
 span {
     font-family: 'Montserrat', sans-serif; 
     font-weight: bold;
     color: #fff;
-    font-size: 28px;
+    font-size: 2.5vw;
   }
     
   h1 {
     font-family: 'ProductSans', sans-serif; 
     font-weight: bold;
     color: #505050;
-    padding-top: 60px;
+    padding-top: 5vh;
     margin: 0px;
-    font-size: 50px;
+    font-size: 4vw;
     line-height: 1;
-    text-align: center;
+    text-align: left;
     }
   
 .proj-container {
@@ -38,7 +39,7 @@ span {
     align-content: center;
     background-size: cover;
     background-position: center;
-    padding: 50px 50px;
+    padding: 5vw;
     margin: 0 auto;
 }
 
@@ -47,17 +48,21 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    width: 50%;
+    padding: 2vw;
+    width: 40%;
+}
+
+.photo-container img {
+  width: 80%;
 }
 
 .text-container {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 20px;
+    padding: 2vw;
     font-family: 'ProductSans';
 }
 
@@ -66,12 +71,12 @@ span {
     color: #282828;
     background-color: #ffffff00;
     margin-bottom: 9px;
-    font-size: 38px;
+    font-size: 2vw;
 }
 
 .text-container h2 {
     font-family: 'ProductSans';
-    font-size: 28px;
+    font-size: 1.8vw;
     color: #5b5b5b;
     background-color: #ffffff00;
     margin-bottom: 0px;
@@ -80,7 +85,7 @@ span {
 
 .text-container p {
     font-family: 'ProductSans';
-    font-size: 15px;
+    font-size: 1.2vw;
     color: #6b6b6b;
     background-color: #ffffff00;
     margin-bottom: 0px;
@@ -90,6 +95,7 @@ span {
 
 .text-container li {
     font-family: 'ProductSans';
+    font-size: 1.2vw;
     color: #6b6b6b;
     background-color: #ffffff00;
     margin-bottom: 0px;
@@ -99,11 +105,11 @@ span {
   background-color: #dac2f4;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1.2vw 2vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.2vw;
   margin: 12px 2px;
   cursor: pointer;
   border-radius: 8px;
@@ -116,8 +122,8 @@ span {
 }
 
 model-viewer {
-  width: 300px;
-  height: 500px;
+  width: 30vw;
+  height: 50vh;
   margin: 20px 20px;
 }
 

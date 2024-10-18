@@ -101,7 +101,7 @@ h3, h4, h5, h6 {
 
 #browser-frame {
   width: 90%;
-  height: 50%;
+  height: 40%;
   margin: 40px auto;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
@@ -208,4 +208,44 @@ h3, h4, h5, h6 {
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+#hamburger-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #5b5f60;
+  padding: 20px;
+}
+
+#navbar ul {
+  display: flex;
+}
+
+@media screen and (max-width: 900px){
+  #navbar ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 5;
+  }
+
+  #hamburger-icon {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    z-index: 10;
+  }
+
+  #navbar.show ul {
+    display: flex;
+  }
+  #browser-frame {
+    margin-top: 100px;
+  }
 }

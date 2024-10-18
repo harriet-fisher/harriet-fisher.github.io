@@ -28,4 +28,10 @@ document.getElementById('tab-bar').addEventListener('click', function(event) {
 
 document.addEventListener('DOMContentLoaded', function() {
   switchTab('coding');
+  var hamburgerIcon = document.getElementById('hamburger-icon');
+  var navbar = document.getElementById('navbar');
+
+  hamburgerIcon.addEventListener('click', function() {
+    navbar.classList.toggle('show');
+  });
 });
