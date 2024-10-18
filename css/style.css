@@ -45,11 +45,8 @@ h2, h3, h4, h5, h6 {
 
 #nav-container {
   max-width: 1200px;
-  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-  display: flex;
-  justify-content: center;
 }
 
 #navbar ul {
@@ -453,61 +450,14 @@ h2, h3, h4, h5, h6 {
   }
 }
 
-#hamburger-icon {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: #5b5f60;
-}
-
-#navbar-menu {
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 250px;
-  height: 100%;
-  background-color: #333;
-  transition: left 0.3s ease;
-}
-
-#navbar-menu li {
-  padding: 16px;
-  border-bottom: 1px solid #444;
-}
-
-#navbar-menu li a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  display: block;
-}
-
-#navbar-menu li a:hover {
-  background-color: #575757;
-}
-
-#navbar-menu.active {
-  left: 0;
-}
-
 /* FOR PHONES */
 @media screen and (max-width: 768px) {
-  #hamburger-icon {
-    display: block;
-  }
-
-  #navbar ul {
-    display: none;
-  }
-
   #container {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-
+  
   #smartphone, #sidebar {
-    width: 90%;
+    width: 100%;
     margin: 0;
     height: auto;
     max-width: none;
@@ -515,57 +465,25 @@ h2, h3, h4, h5, h6 {
 
   .profile-photo, #command-input, #output-container {
     width: 90%;
-    height: auto;
-  }
-
-  .about-photo {
-    width: 50%;
-    height: auto;
   }
   
   h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
-
+  
   #interactive-terminal, #output {
-    padding: 10px;
+    padding: 15px;
   }
 
   #command-input {
-    width: calc(100% - 20px);
+    width: calc(100% - 30px);
     margin-left: 0px;
     bottom: 0;
-  }
-
-  .skills-container, .about-column, .photo-column {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  img {
-    max-width: 80%;
-    height: auto;
-  }
-
-  button {
-    width: 200px;
-    height: 40px;
-    font-size: 0.8rem;
   }
 }
 
 /* FOR TABLETS (iPads) */
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  #hamburger-icon {
-    display: block;
-  }
-
-  #navbar ul {
-    display: none;
-  }
-
   #container {
     flex-direction: column;
     justify-content: center;
@@ -573,53 +491,28 @@ h2, h3, h4, h5, h6 {
   }
 
   #smartphone, #sidebar {
-    width: 90%;
+    width: 100%;
     margin: 0;
     height: auto;
     padding: 20px;
   }
 
   .profile-photo {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     padding-bottom: 20px;
-    height: auto;
-  }
-
-  .about-photo {
-    width: 60%;
-    height: auto;
   }
 
   #command-input, #output-container {
-    width: 85%;
+    width: 80%;
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   #interactive-terminal {
-    width: 85%;
+    width: 90%;
     padding: 20px;
-  }
-
-  /* Ensure items stack vertically */
-  .skills-container, .about-column, .photo-column {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  img {
-    max-width: 90%;
-    height: auto;
-  }
-
-  button {
-    width: 220px;
-    height: 45px;
-    font-size: 0.9rem;
   }
 }
