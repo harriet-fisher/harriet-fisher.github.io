@@ -8,8 +8,11 @@
 </head>
 <body>
   <nav id="navbar">
+    <div id="hamburger-icon" onclick="toggleMenu()">
+      &#9776;
+    </div>
     <div id="nav-container">
-      <ul>
+      <ul id="navbar">
         <li><a href="index.html">Home</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="resume.html">Resume</a></li>
@@ -26,7 +29,7 @@
             <img src="assets/images/on_phone.gif" alt="Contact Photo" class="contact-photo">
         </div>
     </div>
-    <section id="contact-form-section">
+    <div id="contact-form-section">
         <form id="contact-form" action="https://formspree.io/f/mgvwvwel" method="POST">
             <div class="form-group">
                 <label for="name">Name:</label>
@@ -42,6 +45,12 @@
             </div>
             <button type="submit">Send Message</button>
         </form>
-    </section>
-    </div>
+      </div>
+  </div>
+    <script>
+      function toggleMenu() {
+        const navbar = document.getElementById('navbar');
+        navbar.classList.toggle('show');
+      }
+    </script>
 </body>

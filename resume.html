@@ -8,8 +8,11 @@
 </head>
 <body>
   <nav id="navbar">
+    <div id="hamburger-icon" onclick="toggleMenu()">
+      &#9776;
+    </div>
     <div id="nav-container">
-      <ul>
+      <ul id="navbar">
         <li><a href="index.html">Home</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="resume.html">Resume</a></li>
@@ -24,4 +27,10 @@
     <img src="assets/images/resume/resume_p1.png" class="resume-photo">
     <img src="assets/images/resume/resume_p2.png" class="resume-photo">
 </div>
+<script>
+  function toggleMenu() {
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('show');
+  }
+</script>
 </body>

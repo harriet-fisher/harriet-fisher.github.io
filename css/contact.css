@@ -69,31 +69,24 @@ h2, h3, h4, h5, h6 {
 #container {
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
     justify-content: center;
     align-items: center;
-    padding: 0px 100px;
-    margin-top: -20px;
-    padding-bottom: 0px;
+    padding: 20px;
+    margin-top: 25px;
   }
 
   #header-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     align-items: center;
     justify-content: center;
-    text-align: left;
     padding: 0px 0px;
-    width: 70%;
-    margin-right: -20px;
+    width: 50%;
   }
 
   .contact-p {
     color: #414141;
-    font-size: 18px;
-    margin-left: -28px;
-    margin-top: -10px;
+    font-size: 1.5rem;
     padding-bottom: 10px;
   }
   
@@ -121,12 +114,9 @@ h2, h3, h4, h5, h6 {
     padding-bottom: 0px;
   }
   #contact-form-section {
-    height: 50%;
-    width: 40%;
-    position: relative;
-    margin-right: 50px;
-    margin-left: -25px;
-    padding: 20px 20px;
+    width: 50%;
+    margin-right: 70px;
+    padding: 2vw 3vw;
     background-color: #f9f9f9;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     border-radius: 8px;
@@ -175,4 +165,53 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #ce76a8;
+}
+
+#hamburger-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #5b5f60;
+  padding: 20px;
+}
+
+#navbar ul {
+  display: flex;
+}
+
+@media screen and (max-width: 900px){
+  #navbar ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 5;
+  }
+
+  #hamburger-icon {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    z-index: 10;
+  }
+
+  #navbar.show ul {
+    display: flex;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 150px;
+    padding-top: 50px;
+  }
+
+  #contact-form-section {
+    margin-top: 50px;
+    margin-right: 0px;
+  }
 }
