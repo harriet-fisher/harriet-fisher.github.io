@@ -45,8 +45,11 @@ h2, h3, h4, h5, h6 {
 
 #nav-container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  justify-content: center;
 }
 
 #navbar ul {
@@ -458,16 +461,12 @@ h2, h3, h4, h5, h6 {
 }
 
 #navbar-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
   position: fixed;
   top: 0;
   left: -250px;
   width: 250px;
   height: 100%;
-  z-index: 1000;
+  background-color: #333;
   transition: left 0.3s ease;
 }
 
@@ -508,7 +507,7 @@ h2, h3, h4, h5, h6 {
   }
 
   #smartphone, #sidebar {
-    width: 100%;
+    width: 90%;
     margin: 0;
     height: auto;
     max-width: none;
@@ -574,7 +573,7 @@ h2, h3, h4, h5, h6 {
   }
 
   #smartphone, #sidebar {
-    width: 100%;
+    width: 90%;
     margin: 0;
     height: auto;
     padding: 20px;

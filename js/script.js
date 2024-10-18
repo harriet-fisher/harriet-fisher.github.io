@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
       outputElement.scrollTop = 0;
     }
   });
-  
+
   var hamburgerIcon = document.getElementById("hamburger-icon");
   hamburgerIcon.addEventListener('click', function() {
     var menu = document.getElementById("navbar-menu");
