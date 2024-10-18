@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (command.toLowerCase() === 'facts') {
         response = '<img src="./assets/images/facts_google.png" alt="About Image">';
       } else {
-        response = 'Command not recognized.';
+        response = '<img src="./assets/images/bubble_commands.gif" class="lower-image" alt="About Image">';
       }
 
       outputElement.innerHTML = response;
