@@ -78,6 +78,7 @@ h2, h3, h4, h5, h6 {
   width: 95vw;
   align-items: center;
   justify-content: center;
+  margin-top: -70px;
 }
   
   #smartphone {
@@ -194,7 +195,7 @@ h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     color: rgb(35, 32, 32);
-    padding: 20px;
+    padding: 0px 20px;
 }
   
 #output-container {
