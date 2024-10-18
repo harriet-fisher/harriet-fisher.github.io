@@ -24,7 +24,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #3d4041;
-  font-size: 80px;
+  font-size: 64px;
   line-height: 1;
   text-align: left;
   }
@@ -72,14 +72,14 @@ h2, h3, h4, h5, h6 {
   color: #659bbc;
 }
 
-  #container {
-    display: flex;
-    flex-direction: row;
-    width: 95vw;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: -70px;
-  }
+#container {
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -70px;
+}
   
   #smartphone {
     background: #00000000;
@@ -131,10 +131,12 @@ h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
+    height: 80%;
   }
   
   #recruitment-status {
-    margin-top: 30px;
+    margin-top: 100px;
     margin-bottom: -50px;
     color: #404141;
   }
@@ -161,7 +163,6 @@ h2, h3, h4, h5, h6 {
     vertical-align: middle;
   }
 
-  
   button {
     background-color: #cec5e5;
     width: 250px;
@@ -188,56 +189,62 @@ h2, h3, h4, h5, h6 {
     position: relative;
     background: url('../assets/images/browser_bg_2.svg') no-repeat center center;
     background-size: contain;
-    width: 1000px;
+    width: 100%;
     height: 900px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     color: rgb(35, 32, 32);
+    padding: 20px;
 }
   
-  #output-container {
-    width: 100%;
+#output-container {
+    width: 95%;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    position: relative;
   }
 
-  #output {
+#output {
     list-style-type: none;
     color: #45474c;
     font-family: 'ProductSans';
     margin-left: 20px;
+    align-items: center;
+    justify-content: center;
   }
 
-  #output img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
+#output img {
+    max-width: 95%;
+    padding: 0px 10px;
 }
 
 .lower-image {
-  margin-top: 50px;
-  margin-bottom: -100px;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-  .search-container {
+.search-container {
     display: flex;
     flex-direction: row;
     display: flex;
     align-items:center;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     position: relative;
     padding: 10px;
   }
 
   .goog-logo {
-    width: 300px;
+    width: 30%;
     height: auto;
     align-self: center;
-    margin-top: 150px;
+    margin-top: 70px;
   }
   
   .search-image{
@@ -415,104 +422,77 @@ h2, h3, h4, h5, h6 {
     text-decoration: underline;
   }
 
+/*------------------------------------------------------------------- */
 
-/* FOR PHONES*/
+/* FOR SMALLER SCREENS */
+@media screen and (max-width: 900px){
 
-@media screen and (max-width: 768px) {
   #container {
     flex-direction: column;
-  }
-  
-  #smartphone, #sidebar {
-    width: 100%;
-    margin: 0;
-    height: auto;
-    max-width: none;
-  }
-
-  .profile-photo, #command-input, #output-container {
-    width: 90%;
-  }
-
-  
-  h1 {
-    font-size: 40px;
-  }
-  
-  #interactive-terminal, #output {
-    padding: 15px;
-  }
-
-  #command-input {
-    width: calc(100% - 30px);
-    margin-left: 0px;
-    bottom: 0;
-  }
-}
-
-/* FOR PHONES */
-@media screen and (max-width: 768px) {
-  #container {
-    flex-direction: column;
-  }
-  
-  #smartphone, #sidebar {
-    width: 100%;
-    margin: 0;
-    height: auto;
-    max-width: none;
-  }
-
-  .profile-photo, #command-input, #output-container {
-    width: 90%;
-  }
-  
-  h1 {
-    font-size: 40px;
-  }
-  
-  #interactive-terminal, #output {
-    padding: 15px;
-  }
-
-  #command-input {
-    width: calc(100% - 30px);
-    margin-left: 0px;
-    bottom: 0;
-  }
-}
-
-/* FOR TABLETS (iPads) */
-@media screen and (max-width: 1024px) and (min-width: 769px) {
-  #container {
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 10px;
   }
 
-  #smartphone, #sidebar {
+  #interactive-terminal{
+    margin-top: -100px;
+    margin-bottom: -100px;
+    min-height: max-content;
+  }
+
+  #smartphone {
     width: 100%;
-    margin: 0;
     height: auto;
-    padding: 20px;
+    padding: 0;
+    margin-bottom: -150px;
+  }
+
+  #output img {
+    max-width: 95%;
+    padding: 0px 10px;
+    margin-top: -10px;
+}
+
+  #sidebar {
+    width: 100%;
+    padding: 0px 20px;
+    height: auto;
   }
 
   .profile-photo {
-    width: 60%;
-    margin: 0 auto;
-    padding-bottom: 20px;
+    width: 300px;
+    height: 300px;
   }
 
-  #command-input, #output-container {
-    width: 80%;
+  #about-section {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
   }
 
-  h1 {
-    font-size: 60px;
+  .about-column, .photo-column {
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  #interactive-terminal {
-    width: 90%;
-    padding: 20px;
+  .photo-column {
+    padding-right: 0;
+  }
+
+  #skills ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  #command-input {
+    width: 100%;
   }
 }
