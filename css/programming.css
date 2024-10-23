@@ -53,8 +53,11 @@ span {
 }
 
 .photo-container img {
-  width: 80%;
+  width: 100%;
   height: auto;
+  object-fit: cover;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .text-container {
