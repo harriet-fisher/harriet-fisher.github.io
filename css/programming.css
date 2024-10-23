@@ -54,6 +54,7 @@ span {
 
 .photo-container img {
   width: 80%;
+  height: auto;
 }
 
 .text-container {
