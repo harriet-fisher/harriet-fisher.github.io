@@ -366,6 +366,38 @@ h2, h3, h4, h5, h6 {
     border-radius: 5px;
     margin-bottom: 10px;
     white-space: nowrap;
+    position: relative;
+    transition: background-color 0.5s;
+  }
+  
+  #skills li:hover {
+    background-color: #efefef;
+    color:#29467d;
+  }
+
+  @keyframes sparkle {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+  
+  .sparkle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    animation: sparkle 0.6s ease-out;
+    pointer-events: none;
   }
 
   #footer-section {
